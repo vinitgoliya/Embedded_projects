@@ -1,0 +1,1 @@
+"..\src\uart.c" OPTIMIZE (0,SPEED) BROWSE INCDIR(..\include) DEBUG OBJECTEXTEND PRINT(.\Listings\uart.lst) TABS (2) OBJECT(..\bin\uart.obj)

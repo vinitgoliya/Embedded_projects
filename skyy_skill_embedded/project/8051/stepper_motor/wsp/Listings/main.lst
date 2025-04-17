@@ -1,0 +1,91 @@
+C51 COMPILER V9.60.7.0   MAIN                                                              09/30/2024 22:08:28 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN ..\bin\main.obj
+COMPILER INVOKED BY: C:\Users\user\embedded_development\C51\BIN\C51.EXE ..\app\main.c OPTIMIZE(0,SPEED) BROWSE INCDIR(..
+                    -\include) DEBUG OBJECTEXTEND PRINT(.\Listings\main.lst) TABS(2) OBJECT(..\bin\main.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          #include<global.h>
+   3          #include<drv51.h>
+   4          
+   5          
+   6          void forward();
+   7          void backward();
+   8          
+   9             
+  10          unsigned char position[] = {0x10,0x02,0x06,0x04,0x05,0x01,0x09,0x08};
+  11          
+  12          void main()
+  13            {
+  14   1          Clr_Reg(P2);
+  15   1          while(1)
+  16   1          {
+  17   2            if(SW0 == 0)
+  18   2            {
+  19   3              forward();
+  20   3              
+  21   3            }else if(SW1 == 0)
+  22   2               {
+  23   3                    backward();
+  24   3               }
+  25   2          }
+  26   1        }
+  27            
+  28            void forward()
+  29              {
+  30   1            int i = 0;
+  31   1            for(i=0;i<=7;i++)
+  32   1              {
+  33   2                P2 = position[i];
+  34   2                if(SW0 == 1) break;
+  35   2                delay(8000);
+  36   2              }
+  37   1      //      P2 = 0x010;
+  38   1      //        delay();
+  39   1      //      P2 = 0x02;
+  40   1      //        delay();
+  41   1      //      P2 = 0x06;
+  42   1      //        delay();
+  43   1      //      P2 = 0x04;
+  44   1      //        delay();
+  45   1      //      P2 = 0x05;
+  46   1      //        delay();
+  47   1      //      P2 = 0x01;
+  48   1      //        delay();
+  49   1      //      P2 = 0x09;
+  50   1      //        delay();
+  51   1      //      P2 = 0x08;
+  52   1      //        delay();
+  53   1      
+  54   1          }
+C51 COMPILER V9.60.7.0   MAIN                                                              09/30/2024 22:08:28 PAGE 2   
+
+  55              
+  56              
+  57              void backward()
+  58              {
+  59   1            int i = 0;
+  60   1            for(i=7;i>=0;i--)
+  61   1              {
+  62   2                P2 = position[i];
+  63   2                delay(8000);
+  64   2              }
+  65   1          }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    125    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     12    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

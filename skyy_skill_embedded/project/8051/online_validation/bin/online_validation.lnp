@@ -1,0 +1,8 @@
+"..\bin\STARTUP.obj",
+"..\bin\main.obj",
+"..\bin\delay.obj",
+"..\bin\lcd.obj",
+"..\bin\timer.obj",
+"..\bin\uart.obj" 
+TO "..\bin\online_validation" 
+PRINT(".\Listings\online_validation.m51") CODE( 0X0000-0X0FFF )

@@ -1,0 +1,5 @@
+"..\bin\STARTUP.obj",
+"..\bin\main.obj",
+"..\bin\drv51.obj" 
+TO "..\bin\stepper_motor" 
+PRINT(".\Listings\stepper_motor.m51")

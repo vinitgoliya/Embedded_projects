@@ -1,0 +1,12 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+F:\skyy_skill_embedded\project\arm\1.GPIO\wsp\led_blink.uvproj
+Project File Date:  02/05/2025
+
+<h2>Output:</h2>
+compiling main.c...
+..\app\main.c(13): warning:  #951-D: return type of function "main" must be "int"
+..\app\main.c - 0 Error(s), 1 Warning(s).

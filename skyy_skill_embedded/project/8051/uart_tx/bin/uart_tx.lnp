@@ -1,0 +1,5 @@
+"..\bin\STARTUP.obj",
+"..\bin\main.obj",
+"..\bin\uart.obj" 
+TO "..\bin\uart_tx" 
+PRINT(".\Listings\uart_tx.m51") CODE( 0X0000-0X0FFF )

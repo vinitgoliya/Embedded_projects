@@ -1,0 +1,8 @@
+"..\bin\STARTUP.obj",
+"..\bin\main.obj",
+"..\bin\delay.obj",
+"..\bin\lcd.obj",
+"..\bin\stepper.obj",
+"..\bin\home.obj" 
+TO "..\bin\home_automation" 
+PRINT(".\Listings\home_automation.m51") CODE( 0X0000-0X0FFF )

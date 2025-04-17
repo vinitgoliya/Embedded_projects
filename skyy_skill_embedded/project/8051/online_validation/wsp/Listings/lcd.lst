@@ -1,0 +1,72 @@
+C51 COMPILER V9.60.7.0   LCD                                                               12/15/2024 17:27:44 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE LCD
+OBJECT MODULE PLACED IN ..\bin\lcd.obj
+COMPILER INVOKED BY: C:\Users\user\embedded_development\C51\BIN\C51.EXE ..\src\lcd.c OPTIMIZE(0,SPEED) BROWSE INCDIR(..\
+                    -include) DEBUG OBJECTEXTEND PRINT(.\Listings\lcd.lst) TABS(2) OBJECT(..\bin\lcd.obj)
+
+line level    source
+
+   1          #include<lcd.h>
+   2          #include<reg51.h>
+   3          #include<global.h>
+   4          #include<delay.h>
+   5          
+   6          void Set_LCD_Clock(void)
+   7            {
+   8   1          Clr_Bit(P3, BIT7);
+   9   1          delay(1000);
+  10   1          Set_Bit(P3, BIT7);
+  11   1        } 
+  12            
+  13          void Write_LCD_Port(unsigned char value)
+  14            {
+  15   1          LCD_PORT = value;
+  16   1        }
+  17            
+  18          void Set_LCD_Command(unsigned char command)
+  19             {
+  20   1           Write_LCD_Port(command);
+  21   1           Set_LCD_Command_Mode();
+  22   1           Set_LCD_Clock();
+  23   1         }
+  24             
+  25          void Set_LCD_Char(unsigned char dat)
+  26            {
+  27   1          Write_LCD_Port(dat);
+  28   1          Set_LCD_Data_Mode();
+  29   1          Set_LCD_Clock();
+  30   1        }
+  31            
+  32          void Init_LCD(void)
+  33            {
+  34   1          Set_LCD_Command(0x38);  //  2 lines and 5×7 matrix
+  35   1          Set_LCD_Command(0x0E);  // Display on, cursor blinking
+  36   1          Set_LCD_Command(0x06); // Increment cursor (shift cursor to right)
+  37   1        }
+  38            
+  39          void Set_LCD_String(unsigned char *str)
+  40            {
+  41   1          while(*str != '\0')
+  42   1            {
+  43   2              Set_LCD_Char(*str);
+  44   2              str++;
+  45   2            }
+  46   1        }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     99    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      6    ----
+C51 COMPILER V9.60.7.0   LCD                                                               12/15/2024 17:27:44 PAGE 2   
+
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

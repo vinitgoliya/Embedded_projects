@@ -1,0 +1,5 @@
+"..\bin\STARTUP.obj",
+"..\bin\main.obj",
+"..\bin\delay.obj" 
+TO "..\bin\line_follow_robot" 
+PRINT(".\Listings\line_follow_robot.m51") CODE( 0X0000-0X0FFF )

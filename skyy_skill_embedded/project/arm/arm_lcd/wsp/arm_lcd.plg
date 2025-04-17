@@ -1,0 +1,22 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+F:\skyy_skill_embedded\project\arm\arm_lcd\wsp\arm_lcd.uvproj
+Project File Date:  03/15/2025
+
+<h2>Output:</h2>
+compiling main.c...
+..\app\main.c(2): error:  #5: cannot open source input file "pcb.h": No such file or directory
+..\app\main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+..\app\main.c(3): error:  #5: cannot open source input file "lpc2148.h": No such file or directory
+..\app\main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+..\include\lpc2148.h(15): error:  #256: invalid redeclaration of type name "u32_t" (declared at line 20 of "..\include\global.h")
+..\app\main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+..\app\main.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\app\main.c - 0 Error(s), 0 Warning(s).

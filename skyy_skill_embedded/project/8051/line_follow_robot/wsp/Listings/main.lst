@@ -1,0 +1,138 @@
+C51 COMPILER V9.60.7.0   MAIN                                                              09/27/2024 09:34:51 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN ..\bin\main.obj
+COMPILER INVOKED BY: C:\Users\user\embedded_development\C51\BIN\C51.EXE ..\app\main.c OPTIMIZE(0,SPEED) BROWSE INCDIR(..
+                    -\include) DEBUG OBJECTEXTEND PRINT(.\Listings\main.lst) TABS(2) OBJECT(..\bin\main.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          #include<robot.h>
+   3          #include<delay.h>
+   4          
+   5          void farword();
+   6          void backword();
+   7          void right();
+   8          void left();
+   9          void stop();
+  10          void runMotor(void f());
+  11          
+  12          void main(){
+  13   1        delay(1000000);
+  14   1        while(1)
+  15   1        {
+  16   2          if(INPUT0 == 0)
+  17   2          {
+  18   3      
+  19   3          //  while(P1^BIT0 == 0);
+  20   3      
+  21   3          //    runMotor(farword);
+  22   3      
+  23   3            
+  24   3        //    farword();
+  25   3          }else if(P1^BIT1 == 0)
+  26   2          {
+  27   3            while(P1^BIT1 == 0)
+  28   3            {
+  29   4              runMotor(backword);
+  30   4            }
+  31   3          //  backword();
+  32   3          }else if(P1^BIT2 == 0)
+  33   2          {
+  34   3            while(P1^BIT2 == 0)
+  35   3            {
+  36   4              runMotor(right);
+  37   4            }
+  38   3          //  right();
+  39   3          }else if(P1^BIT3 == 0)
+  40   2          {
+  41   3            while(P1^BIT3 == 0)
+  42   3            {
+  43   4              runMotor(left);
+  44   4            }
+  45   3          //  left();
+  46   3          }else if(P1^BIT4 == 0)
+  47   2          {
+  48   3            while(P1^BIT4 == 0)
+  49   3            {
+  50   4              runMotor(stop);
+  51   4            }
+  52   3          //  stop();
+  53   3          }
+  54   2        }
+C51 COMPILER V9.60.7.0   MAIN                                                              09/27/2024 09:34:51 PAGE 2   
+
+  55   1        
+  56   1      }
+  57          
+  58          void farword()
+  59            {
+  60   1           Set_Bit(P2,BIT0);
+  61   1           Clr_Bit(P2,BIT1);
+  62   1          
+  63   1           Set_Bit(P2,BIT2);
+  64   1           Clr_Bit(P2,BIT3);
+  65   1        }
+  66            
+  67          void backword()
+  68            {
+  69   1          Set_Bit(P2,BIT1);
+  70   1          Clr_Bit(P2,BIT0);
+  71   1          
+  72   1          Set_Bit(P2,BIT3);
+  73   1          Clr_Bit(P2,BIT2);
+  74   1        }
+  75            
+  76          void right()
+  77            {
+  78   1          Clr_Bit(P2,BIT0);
+  79   1          Clr_Bit(P2,BIT1);
+  80   1          
+  81   1          Set_Bit(P2,BIT2);
+  82   1          Clr_Bit(P2,BIT3);
+  83   1        }
+  84            
+  85          void left()
+  86            {
+  87   1          Set_Bit(P2,BIT0);
+  88   1          Clr_Bit(P2,BIT1);
+  89   1          
+  90   1          Clr_Bit(P2,BIT2);
+  91   1          Clr_Bit(P2,BIT3);
+  92   1        }
+  93            
+  94          void stop()
+  95            {
+  96   1          Clr_Bit(P2,BIT0);
+  97   1          Clr_Bit(P2,BIT1);
+  98   1          Clr_Bit(P2,BIT2);
+  99   1          Clr_Bit(P2,BIT3);
+ 100   1        }
+ 101            
+ 102          
+ 103            
+ 104          void runMotor(void f())
+ 105            {
+ 106   1          while(P1^BIT0==1 && P1^BIT1 && P1^BIT2 && P1^BIT3 && P1^BIT4)
+ 107   1          {
+ 108   2            f();
+ 109   2          }
+ 110   1        }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    214    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+C51 COMPILER V9.60.7.0   MAIN                                                              09/27/2024 09:34:51 PAGE 3   
+
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      3    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

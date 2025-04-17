@@ -1,0 +1,264 @@
+Embedded System:
+-> It is a system which will do some specific define task.
+-> It is the combination of Hardware and Software
+
+
+Input Devices:
+- Switch
+- Sensor
+- RF ID
+
+Output Devices:
+- LED
+- LCD
+- Motor
+- Buzzer
+
+
+
+Power Supply:
+------------
+- 2 Types
+     - AC
+     - DC
+
+-> Electronic component --> Use DC Supply
+         -> Resister, Capacitor, Diode, Microprocessor, Microcontroller,..........
+
+-> Electrical Component --> Use AC Supply
+         -> Transformer, Bulb , Fan, ........................
+
+
+-> Embedded system -> DC Supply
+
+
+Microprocessor/ Microcontroller :
+-------------------------------
+-> For Embedded Application --> We are using Microcontroller
+
+
+MICROCONTROLLER:
+---------------
+-> It is a chip which will store the program  and executes that program by using below features.
+-> Features:
+   - CPU - 8 bit/ 16 bit bit/ 32 bit
+   - Memory:  RAM, ROM, EEPROM...
+   - Pins  - Input pins, output pins   (GPIO - General purpose input output pins)
+   - ADC
+   - Timer/ Counter
+   - Interrupt
+   - PWM
+   - Watch dog Timer
+   - Communication modules : UART, SPI, I2C, CAN, USB, ethernet.....
+   - Address and Data bus 
+   - Clock Circuits
+
+
+Microcontroller classification:
+1. Regarding BIT
+   8 bit/ 16 bit / 32 bit....
+Homework:
+i. How you will get to know that either one controller is 8 bit or 16 bit
+
+2. Regarding Memory Architecture:
+   Harvard 
+   von-neuman
+Home work:
+i. Difference between Harvard and von-neuman Architecture
+ii. Example of Microcontroller, who is using Harvard and who is using von neuman
+
+
+3. Regarding Instruction set:
+   CISC - Complex instruction set computer
+   RISC - Reduced instruction set computer
+
+Home Work:
+i. Difference between CISC and RISC
+ii. Example of CISC and RISC
+
+Microcontroller Family:
+----------------------
+1. 8051 Family : AT89C51, AT89S51, AT89S52,..........
+2. AVR Family : ATMEGA 8, ATMEGA 16, ATMEGA 328P,.............
+3. PIC Family
+4. ARM Family: ARM 7, ARM 9, ARM Cortex,..........
+
+
+8051 MICROCONTROLLER
+--------------------
+Micro controller Name - AT89S51
+
+Features:
+--------
+-> 40 pin IC
+-> CPU - 8 bit Controller
+-> Data and Address Bus : 8 bit Data bus and 16 bit Address bus 
+-> Memories:
+    - Flash ROM - 4KB
+    - RAM - 128 Bytes
+    - 128 Bytes of SFR (Special Function Register)
+-> Peripherals:
+  - 4 DIO (Data Input Output) Ports (32 pins)
+    - Port 0(P0) - P0.0 to P0.7
+    - Port 1(P1) - P1.0 to P1.7
+    - Port 2(P2) - P2.0 to P2.7
+    - Port 3(P3) - P3.0 to P3.7
+
+    
+  - 2 16 bit Timer/Counter
+    - TIMER0
+    - TIMER1
+
+  - 6 Interrupts
+    - TIMER/COUNTER 0
+    - TIMER/COUNTER 1
+    - UART
+    - External Interrupt 0 (INT0)
+    - External Interrupt 1 (INT1)
+    - RESET
+
+
+  - 1 Serial communication protocol
+    - Full duplex UART
+
+  - Internal Oscillator requires external crystal oscillator up to 20MHz
+    Standard Frequency - 11.0592MHz
+
+- Operating Voltage : 5V DC
+
+PIN Configuration:
+------------------
+Current Configuration - 0.5mA
+Voltage Specification - 5V DC
+
+PORT0 (PIN 32 to 39):
+---------------------
+-> Used as Input or Output
+-> used for Address or data Bus
+-> Pin No 30: ALE
+   ----------------
+   ALE = 1 --> PORT0 is used as Data bus
+   ALE = 0 --> PORT0 is used as Address Bus
+
+PORT1(PIN 1 to 8):
+-----------------
+-> Used as Input or Output
+
+PORT2(PIN 21 to 28):
+-------------------
+-> Used as Input or Output
+-> used for Address Bus
+
+PORT3(PIN 10 to 18):
+-------------------
+-> Used as Input or Output
+-> RXD - Used for Receive in serial communication
+-> TXD - used for Transmit in serial communication
+-> INT0 and INT1 --> External Interrupt
+-> T0 and T1 ---> Used Timer/ Counter
+-> WR --> used for write the data from external memory
+-> RD --> Used for Read the data from external memory
+-> XTAL1 and XTAL2 --> External Oscillator
+
+PIN No 31- EA/VPP
+-----------------
+Always it should be ground (Value = 0) , 
+then we can interface with external memory.
+
+PIN 30: PSEN
+-----------
+
+PIN 20: Gnd (0V supply)
+PIN 40: VCC (5v Supply)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

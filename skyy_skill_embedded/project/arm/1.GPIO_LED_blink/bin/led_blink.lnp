@@ -1,0 +1,5 @@
+--cpu ARM7TDMI "..\bin\startup.o" "..\bin\main.o" "..\bin\delay.o" 
+--strict --scatter "..\bin\led_blink.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\led_blink.map" -o ..\bin\led_blink.axf

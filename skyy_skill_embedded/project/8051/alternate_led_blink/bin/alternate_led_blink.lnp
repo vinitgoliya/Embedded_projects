@@ -1,0 +1,4 @@
+"..\bin\STARTUP.obj",
+"..\bin\main.obj" 
+TO "..\bin\alternate_led_blink" 
+PRINT(".\Listings\alternate_led_blink.m51") CODE( 0X0000-0X0FFF )

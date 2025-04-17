@@ -1,0 +1,9 @@
+..\bin\adc.o: ..\src\adc.c
+..\bin\adc.o: ..\include\global.h
+..\bin\adc.o: ..\include\pcb.h
+..\bin\adc.o: ..\include\lpc2148.h
+..\bin\adc.o: ..\include\pll0.h
+..\bin\adc.o: ..\include\lcd.h
+..\bin\adc.o: ..\include\delay.h
+..\bin\adc.o: ..\include\adc.h
+..\bin\adc.o: ..\include\pconp.h

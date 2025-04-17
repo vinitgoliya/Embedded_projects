@@ -1,0 +1,32 @@
+#include<stepper.h>
+#include<delay.h>
+
+void stepper_forward()
+  {
+		STEPPER_PORT = 0x01;
+		STEPPER_DELAY;
+		STEPPER_PORT = 0x02;
+		STEPPER_DELAY;
+		STEPPER_PORT = 0x04;
+		STEPPER_DELAY;
+		STEPPER_PORT = 0x08;
+		STEPPER_DELAY;
+		STEPPER_PORT = 0x00;
+		STEPPER_DELAY;
+	}
+	
+	
+void stepper_backward()
+  {
+		STEPPER_PORT = 0x08;
+		STEPPER_DELAY;
+		STEPPER_PORT = 0x04;
+		STEPPER_DELAY;
+		STEPPER_PORT = 0x02;
+		STEPPER_DELAY;
+		STEPPER_PORT = 0x01;
+		STEPPER_DELAY;
+		STEPPER_PORT = 0x00;
+		STEPPER_DELAY;
+	}
+	

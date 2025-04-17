@@ -1,0 +1,465 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    11/19/2024  22:31:42  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+C:\USERS\USER\EMBEDDED_DEVELOPMENT\C51\BIN\BL51.EXE ..\bin\STARTUP.obj, ..\bin\main.obj, ..\bin\delay.obj, ..\bin\lcd.ob
+>> j, ..\bin\stepper.obj, ..\bin\home.obj TO ..\bin\home_automation PRINT (.\Listings\home_automation.m51) CODE (0X0000-
+>> 0X0FFF)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  ..\bin\STARTUP.obj (?C_STARTUP)
+  ..\bin\main.obj (MAIN)
+  ..\bin\delay.obj (DELAY)
+  ..\bin\lcd.obj (LCD)
+  ..\bin\stepper.obj (STEPPER)
+  ..\bin\home.obj (HOME)
+  C:\USERS\USER\EMBEDDED_DEVELOPMENT\C51\LIB\C51S.LIB (?C?CLDPTR)
+
+
+LINK MAP OF MODULE:  ..\bin\home_automation (?C_STARTUP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000FH     UNIT         _DATA_GROUP_
+            IDATA   0017H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     00E3H     UNIT         ?PR?MAIN?MAIN
+            CODE    08E3H     0032H     UNIT         ?PR?STEPPER_FORWARD?STEPPER
+            CODE    0915H     0032H     UNIT         ?PR?STEPPER_BACKWARD?STEPPER
+            CODE    0947H     0024H     UNIT         ?PR?OPENDOOR?HOME
+            CODE    096BH     0024H     UNIT         ?PR?CLOSEDOOR?HOME
+            CODE    098FH     0024H     UNIT         ?PR?FANON?HOME
+            CODE    09B3H     0024H     UNIT         ?PR?FANOFF?HOME
+            CODE    09D7H     0024H     UNIT         ?PR?LIGHTON?HOME
+            CODE    09FBH     0024H     UNIT         ?PR?LIGHTOFF?HOME
+            CODE    0A1FH     0023H     UNIT         ?PR?_SET_LCD_STRING?LCD
+            CODE    0A42H     0021H     UNIT         ?CO?HOME
+            CODE    0A63H     0019H     UNIT         ?C?LIB_CODE
+            CODE    0A7CH     000FH     UNIT         ?PR?INIT_LCD?LCD
+            CODE    0A8BH     000EH     UNIT         ?PR?SET_LCD_CLOCK?LCD
+            CODE    0A99H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0AA5H     000BH     UNIT         ?PR?_DELAY?DELAY
+            CODE    0AB0H     0009H     UNIT         ?PR?_SET_LCD_COMMAND?LCD
+            CODE    0AB9H     0009H     UNIT         ?PR?_SET_LCD_CHAR?LCD
+            CODE    0AC2H     0003H     UNIT         ?PR?_WRITE_LCD_PORT?LCD
+
+
+
+OVERLAY MAP OF MODULE:   ..\bin\home_automation (?C_STARTUP)
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  11/19/2024  22:31:42  PAGE 2
+
+
+SEGMENT                                DATA_GROUP 
+  +--> CALLED SEGMENT                START    LENGTH
+----------------------------------------------------
+?C_C51STARTUP                        -----    -----
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN                        0008H    000CH
+  +--> ?PR?INIT_LCD?LCD
+  +--> ?PR?_SET_LCD_COMMAND?LCD
+  +--> ?PR?_DELAY?DELAY
+  +--> ?PR?OPENDOOR?HOME
+  +--> ?PR?CLOSEDOOR?HOME
+  +--> ?PR?FANON?HOME
+  +--> ?PR?FANOFF?HOME
+  +--> ?PR?LIGHTON?HOME
+  +--> ?PR?LIGHTOFF?HOME
+
+?PR?INIT_LCD?LCD                     -----    -----
+  +--> ?PR?_SET_LCD_COMMAND?LCD
+
+?PR?_SET_LCD_COMMAND?LCD             -----    -----
+  +--> ?PR?_WRITE_LCD_PORT?LCD
+  +--> ?PR?SET_LCD_CLOCK?LCD
+
+?PR?SET_LCD_CLOCK?LCD                -----    -----
+  +--> ?PR?_DELAY?DELAY
+
+?PR?OPENDOOR?HOME                    -----    -----
+  +--> ?PR?_SET_LCD_COMMAND?LCD
+  +--> ?PR?STEPPER_FORWARD?STEPPER
+  +--> ?CO?HOME
+  +--> ?PR?_SET_LCD_STRING?LCD
+
+?PR?STEPPER_FORWARD?STEPPER          -----    -----
+  +--> ?PR?_DELAY?DELAY
+
+?PR?_SET_LCD_STRING?LCD              0014H    0003H
+  +--> ?PR?_SET_LCD_CHAR?LCD
+
+?PR?_SET_LCD_CHAR?LCD                -----    -----
+  +--> ?PR?_WRITE_LCD_PORT?LCD
+  +--> ?PR?SET_LCD_CLOCK?LCD
+
+?PR?CLOSEDOOR?HOME                   -----    -----
+  +--> ?PR?_SET_LCD_COMMAND?LCD
+  +--> ?PR?STEPPER_BACKWARD?STEPPER
+  +--> ?CO?HOME
+  +--> ?PR?_SET_LCD_STRING?LCD
+
+?PR?STEPPER_BACKWARD?STEPPER         -----    -----
+  +--> ?PR?_DELAY?DELAY
+
+?PR?FANON?HOME                       -----    -----
+  +--> ?PR?_SET_LCD_COMMAND?LCD
+  +--> ?PR?STEPPER_FORWARD?STEPPER
+  +--> ?CO?HOME
+  +--> ?PR?_SET_LCD_STRING?LCD
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  11/19/2024  22:31:42  PAGE 3
+
+
+
+?PR?FANOFF?HOME                      -----    -----
+  +--> ?PR?_SET_LCD_COMMAND?LCD
+  +--> ?PR?STEPPER_BACKWARD?STEPPER
+  +--> ?CO?HOME
+  +--> ?PR?_SET_LCD_STRING?LCD
+
+?PR?LIGHTON?HOME                     -----    -----
+  +--> ?PR?_SET_LCD_COMMAND?LCD
+  +--> ?CO?HOME
+  +--> ?PR?_SET_LCD_STRING?LCD
+
+?PR?LIGHTOFF?HOME                    -----    -----
+  +--> ?PR?_SET_LCD_COMMAND?LCD
+  +--> ?CO?HOME
+  +--> ?PR?_SET_LCD_STRING?LCD
+
+
+
+SYMBOL TABLE OF MODULE:  ..\bin\home_automation (?C_STARTUP)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ?C_STARTUP
+  C:0A99H         SEGMENT       ?C_C51STARTUP
+  I:0017H         SEGMENT       ?STACK
+  C:0000H         PUBLIC        ?C_STARTUP
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  N:0000H         SYMBOL        IBPSTACK
+  N:0100H         SYMBOL        IBPSTACKTOP
+  N:0080H         SYMBOL        IDATALEN
+  C:0A9CH         SYMBOL        IDATALOOP
+  N:0000H         SYMBOL        PBPSTACK
+  N:0100H         SYMBOL        PBPSTACKTOP
+  N:0000H         SYMBOL        PDATALEN
+  N:0000H         SYMBOL        PDATASTART
+  N:0000H         SYMBOL        PPAGE
+  N:0000H         SYMBOL        PPAGEENABLE
+  D:00A0H         SYMBOL        PPAGE_SFR
+  D:0081H         SYMBOL        SP
+  C:0A99H         SYMBOL        STARTUP1
+  N:0000H         SYMBOL        XBPSTACK
+  N:0000H         SYMBOL        XBPSTACKTOP
+  N:0000H         SYMBOL        XDATALEN
+  N:0000H         SYMBOL        XDATASTART
+  C:0000H         LINE#         126
+  C:0A99H         LINE#         133
+  C:0A9BH         LINE#         134
+  C:0A9CH         LINE#         135
+  C:0A9DH         LINE#         136
+  C:0A9FH         LINE#         185
+  C:0AA2H         LINE#         196
+  -------         ENDMOD        ?C_STARTUP
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  11/19/2024  22:31:42  PAGE 4
+
+
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00B0H         PUBLIC        P3
+  C:0800H         PUBLIC        main
+  B:0090H.0       PUBLIC        DOOR
+  B:0090H.1       PUBLIC        FAN
+  B:0090H.2       PUBLIC        LIGHT
+  -------         PROC          MAIN
+  -------         DO            
+  D:0008H         SYMBOL        door_status
+  D:000AH         SYMBOL        fan_status
+  D:000CH         SYMBOL        light_status
+  D:000EH         SYMBOL        door_pressed
+  D:0010H         SYMBOL        fan_pressed
+  D:0012H         SYMBOL        light_pressed
+  -------         ENDDO         
+  C:0800H         LINE#         8
+  C:0800H         LINE#         9
+  C:0805H         LINE#         10
+  C:0809H         LINE#         11
+  C:080DH         LINE#         12
+  C:0811H         LINE#         13
+  C:0815H         LINE#         14
+  C:0819H         LINE#         15
+  C:081CH         LINE#         16
+  C:081FH         LINE#         17
+  C:0824H         LINE#         19
+  C:0824H         LINE#         21
+  C:082DH         LINE#         22
+  C:0834H         LINE#         23
+  C:0837H         LINE#         24
+  C:083DH         LINE#         25
+  C:0843H         LINE#         26
+  C:0846H         LINE#         27
+  C:084CH         LINE#         28
+  C:084EH         LINE#         29
+  C:0851H         LINE#         30
+  C:0856H         LINE#         31
+  C:0856H         LINE#         32
+  C:0856H         LINE#         33
+  C:085BH         LINE#         34
+  C:0860H         LINE#         35
+  C:0860H         LINE#         38
+  C:0869H         LINE#         39
+  C:0870H         LINE#         40
+  C:0873H         LINE#         41
+  C:0879H         LINE#         42
+  C:087FH         LINE#         43
+  C:0882H         LINE#         44
+  C:0888H         LINE#         45
+  C:088AH         LINE#         46
+  C:088DH         LINE#         47
+  C:0892H         LINE#         48
+  C:0892H         LINE#         49
+  C:0892H         LINE#         50
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  11/19/2024  22:31:42  PAGE 5
+
+
+  C:0897H         LINE#         51
+  C:089CH         LINE#         52
+  C:089CH         LINE#         55
+  C:08A5H         LINE#         56
+  C:08ACH         LINE#         57
+  C:08B2H         LINE#         58
+  C:08B8H         LINE#         59
+  C:08BEH         LINE#         60
+  C:08C1H         LINE#         61
+  C:08C7H         LINE#         62
+  C:08CAH         LINE#         63
+  C:08CDH         LINE#         64
+  C:08D2H         LINE#         65
+  C:08D2H         LINE#         66
+  C:08D2H         LINE#         67
+  C:08DBH         LINE#         68
+  C:08E0H         LINE#         69
+  C:08E0H         LINE#         70
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        DELAY
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0AA5H         PUBLIC        _delay
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        count
+  C:0AA5H         LINE#         3
+  C:0AA5H         LINE#         4
+  C:0AA5H         LINE#         5
+  C:0AAFH         LINE#         6
+  -------         ENDPROC       _DELAY
+  -------         ENDMOD        DELAY
+
+  -------         MODULE        LCD
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  C:0AB0H         PUBLIC        _Set_LCD_Command
+  C:0A8BH         PUBLIC        Set_LCD_Clock
+  C:0A1FH         PUBLIC        _Set_LCD_String
+  C:0AB9H         PUBLIC        _Set_LCD_Char
+  C:0A7CH         PUBLIC        Init_LCD
+  C:0AC2H         PUBLIC        _Write_LCD_Port
+  -------         PROC          SET_LCD_CLOCK
+  C:0A8BH         LINE#         6
+  C:0A8BH         LINE#         7
+  C:0A8BH         LINE#         8
+  C:0A8EH         LINE#         9
+  C:0A95H         LINE#         10
+  C:0A98H         LINE#         11
+  -------         ENDPROC       SET_LCD_CLOCK
+  -------         PROC          _WRITE_LCD_PORT
+  D:0007H         SYMBOL        value
+  C:0AC2H         LINE#         13
+  C:0AC2H         LINE#         14
+  C:0AC2H         LINE#         15
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  11/19/2024  22:31:42  PAGE 6
+
+
+  C:0AC4H         LINE#         16
+  -------         ENDPROC       _WRITE_LCD_PORT
+  -------         PROC          _SET_LCD_COMMAND
+  D:0007H         SYMBOL        command
+  C:0AB0H         LINE#         18
+  C:0AB0H         LINE#         19
+  C:0AB0H         LINE#         20
+  C:0AB3H         LINE#         21
+  C:0AB6H         LINE#         22
+  -------         ENDPROC       _SET_LCD_COMMAND
+  -------         PROC          _SET_LCD_CHAR
+  D:0007H         SYMBOL        dat
+  C:0AB9H         LINE#         25
+  C:0AB9H         LINE#         26
+  C:0AB9H         LINE#         27
+  C:0ABCH         LINE#         28
+  C:0ABFH         LINE#         29
+  -------         ENDPROC       _SET_LCD_CHAR
+  -------         PROC          INIT_LCD
+  C:0A7CH         LINE#         32
+  C:0A7CH         LINE#         33
+  C:0A7CH         LINE#         34
+  C:0A81H         LINE#         35
+  C:0A86H         LINE#         36
+  -------         ENDPROC       INIT_LCD
+  -------         PROC          _SET_LCD_STRING
+  D:0014H         SYMBOL        str
+  C:0A1FH         LINE#         39
+  C:0A25H         LINE#         40
+  C:0A25H         LINE#         41
+  C:0A31H         LINE#         42
+  C:0A31H         LINE#         43
+  C:0A34H         LINE#         44
+  C:0A3FH         LINE#         45
+  C:0A41H         LINE#         46
+  -------         ENDPROC       _SET_LCD_STRING
+  -------         ENDMOD        LCD
+
+  -------         MODULE        STEPPER
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  C:0915H         PUBLIC        stepper_backward
+  C:08E3H         PUBLIC        stepper_forward
+  -------         PROC          STEPPER_FORWARD
+  C:08E3H         LINE#         4
+  C:08E3H         LINE#         5
+  C:08E3H         LINE#         6
+  C:08E6H         LINE#         7
+  C:08EDH         LINE#         8
+  C:08F0H         LINE#         9
+  C:08F7H         LINE#         10
+  C:08FAH         LINE#         11
+  C:0901H         LINE#         12
+  C:0904H         LINE#         13
+  C:090BH         LINE#         14
+  C:090EH         LINE#         15
+  -------         ENDPROC       STEPPER_FORWARD
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  11/19/2024  22:31:42  PAGE 7
+
+
+  -------         PROC          STEPPER_BACKWARD
+  C:0915H         LINE#         19
+  C:0915H         LINE#         20
+  C:0915H         LINE#         21
+  C:0918H         LINE#         22
+  C:091FH         LINE#         23
+  C:0922H         LINE#         24
+  C:0929H         LINE#         25
+  C:092CH         LINE#         26
+  C:0933H         LINE#         27
+  C:0936H         LINE#         28
+  C:093DH         LINE#         29
+  C:0940H         LINE#         30
+  -------         ENDPROC       STEPPER_BACKWARD
+  -------         ENDMOD        STEPPER
+
+  -------         MODULE        HOME
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00B0H         PUBLIC        P3
+  C:098FH         PUBLIC        fanon
+  C:096BH         PUBLIC        closeDoor
+  C:0947H         PUBLIC        openDoor
+  C:09FBH         PUBLIC        lightoff
+  C:09B3H         PUBLIC        fanoff
+  C:09D7H         PUBLIC        lighton
+  -------         PROC          OPENDOOR
+  C:0947H         LINE#         9
+  C:0947H         LINE#         10
+  C:0947H         LINE#         11
+  C:094CH         LINE#         12
+  C:094FH         LINE#         13
+  C:0954H         LINE#         14
+  C:095DH         LINE#         15
+  C:0962H         LINE#         16
+  -------         ENDPROC       OPENDOOR
+  -------         PROC          CLOSEDOOR
+  C:096BH         LINE#         19
+  C:096BH         LINE#         20
+  C:096BH         LINE#         21
+  C:0970H         LINE#         22
+  C:0973H         LINE#         23
+  C:0978H         LINE#         24
+  C:0981H         LINE#         25
+  C:0986H         LINE#         26
+  -------         ENDPROC       CLOSEDOOR
+  -------         PROC          FANON
+  C:098FH         LINE#         29
+  C:098FH         LINE#         30
+  C:098FH         LINE#         31
+  C:0994H         LINE#         32
+  C:0997H         LINE#         33
+  C:099CH         LINE#         34
+  C:09A5H         LINE#         35
+  C:09AAH         LINE#         36
+  -------         ENDPROC       FANON
+  -------         PROC          FANOFF
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  11/19/2024  22:31:42  PAGE 8
+
+
+  C:09B3H         LINE#         39
+  C:09B3H         LINE#         40
+  C:09B3H         LINE#         41
+  C:09B8H         LINE#         42
+  C:09BBH         LINE#         43
+  C:09C0H         LINE#         44
+  C:09C9H         LINE#         45
+  C:09CEH         LINE#         46
+  -------         ENDPROC       FANOFF
+  -------         PROC          LIGHTON
+  C:09D7H         LINE#         49
+  C:09D7H         LINE#         50
+  C:09D7H         LINE#         51
+  C:09DCH         LINE#         52
+  C:09DFH         LINE#         53
+  C:09E4H         LINE#         54
+  C:09EDH         LINE#         55
+  C:09F2H         LINE#         56
+  -------         ENDPROC       LIGHTON
+  -------         PROC          LIGHTOFF
+  C:09FBH         LINE#         59
+  C:09FBH         LINE#         60
+  C:09FBH         LINE#         61
+  C:0A00H         LINE#         62
+  C:0A03H         LINE#         63
+  C:0A08H         LINE#         64
+  C:0A11H         LINE#         65
+  C:0A16H         LINE#         66
+  -------         ENDPROC       LIGHTOFF
+  -------         ENDMOD        HOME
+
+  -------         MODULE        ?C?CLDPTR
+  C:0A63H         PUBLIC        ?C?CLDPTR
+  -------         ENDMOD        ?C?CLDPTR
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 02AFH BYTE (33%) *
+******************************************************************************
+
+Program Size: data=24.0 xdata=0 code=712
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

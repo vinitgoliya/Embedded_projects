@@ -1,0 +1,24 @@
+*** Creating Trace Output File '..\bin\arm_lcd.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"..\bin\startup.o"'
+### List of Objects: adding '"..\bin\main.o"'
+### List of Objects: adding '"..\bin\delay.o"'
+### List of Objects: adding '"..\bin\lcd.o"'
+### List of Objects: adding '"..\bin\pll0.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "..\bin\startup.o" "..\bin\main.o" "..\bin\delay.o" "..\bin\lcd.o" "..\bin\pll0.o" 
+--strict --scatter "..\bin\arm_lcd.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\arm_lcd.map" -o ..\bin\arm_lcd.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '..\bin\arm_lcd.axf'
+### ADS-LD Command File: '..\bin\arm_lcd.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '..\bin\arm_lcd.lnp', Handle=0x00000654
+### Writing '.lnp' file
+### ADS-LD Command file '..\bin\arm_lcd.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

@@ -1,0 +1,15 @@
+Dependencies for Project 'switch_led', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x4F5858F0)(--cpu ARM7TDMI -g --apcs=interwork -I..\include -I C:\Users\user\embedded_development\ARM\RV31\INC -I C:\Users\user\embedded_development\ARM\CMSIS\Include -I C:\Users\user\embedded_development\ARM\Inc\Philips --list "Startup.lst" --xref -o "..\bin\Startup.o" --depend "..\bin\Startup.d")
+F (..\app\main.c)(0x67CE6610)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I C:\Users\user\embedded_development\ARM\RV31\INC -I C:\Users\user\embedded_development\ARM\CMSIS\Include -I C:\Users\user\embedded_development\ARM\Inc\Philips -o "..\bin\main.o" --omf_browse "..\bin\main.crf" --depend "..\bin\main.d")
+I (..\include\global.h)(0x67CE6315)
+I (..\include\LPC2148.h)(0x67A232B4)
+I (..\include\pcb.h)(0x67A2D4DE)
+I (..\include\delay.h)(0x67A23294)
+I (..\include\pll0.h)(0x67BDD672)
+I (..\include\pconp.h)(0x67BDD672)
+F (..\src\delay.c)(0x67A2328F)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I C:\Users\user\embedded_development\ARM\RV31\INC -I C:\Users\user\embedded_development\ARM\CMSIS\Include -I C:\Users\user\embedded_development\ARM\Inc\Philips -o "..\bin\delay.o" --omf_browse "..\bin\delay.crf" --depend "..\bin\delay.d")
+I (..\include\delay.h)(0x67A23294)
+F (..\src\pll0.c)(0x67BDD673)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I C:\Users\user\embedded_development\ARM\RV31\INC -I C:\Users\user\embedded_development\ARM\CMSIS\Include -I C:\Users\user\embedded_development\ARM\Inc\Philips -o "..\bin\pll0.o" --omf_browse "..\bin\pll0.crf" --depend "..\bin\pll0.d")
+I (..\include\global.h)(0x67CE6315)
+I (..\include\lpc2148.h)(0x67A232B4)
+I (..\include\pll0.h)(0x67BDD672)

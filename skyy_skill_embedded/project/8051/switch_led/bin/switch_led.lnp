@@ -1,0 +1,4 @@
+"..\bin\STARTUP.obj",
+"..\bin\main.obj" 
+TO "..\bin\switch_led" 
+PRINT(".\Listings\switch_led.m51") CODE( 0X0000-0X0FFF )

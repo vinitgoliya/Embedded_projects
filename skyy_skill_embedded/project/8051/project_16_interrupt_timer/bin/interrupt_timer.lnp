@@ -1,0 +1,5 @@
+"..\bin\STARTUP.obj",
+"..\bin\main.obj",
+"..\bin\timer.obj" 
+TO "..\bin\interrupt_timer" 
+PRINT(".\Listings\interrupt_timer.m51") CODE( 0X0000-0X0FFF )

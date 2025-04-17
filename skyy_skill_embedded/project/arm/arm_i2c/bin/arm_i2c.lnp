@@ -1,0 +1,5 @@
+--cpu ARM7TDMI "..\bin\startup.o" "..\bin\main.o" "..\bin\pll0.o" "..\bin\lcd.o" "..\bin\delay.o" "..\bin\i2c.o" 
+--strict --scatter "..\bin\arm_i2c.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\arm_i2c.map" -o ..\bin\arm_i2c.axf

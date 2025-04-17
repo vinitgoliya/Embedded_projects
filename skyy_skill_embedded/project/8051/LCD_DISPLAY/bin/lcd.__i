@@ -1,0 +1,1 @@
+"..\src\lcd.c" OPTIMIZE (0,SPEED) BROWSE INCDIR(..\include) DEBUG OBJECTEXTEND PRINT(.\Listings\lcd.lst) TABS (2) OBJECT(..\bin\lcd.obj)

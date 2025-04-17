@@ -1,0 +1,11 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+F:\skyy_skill_embedded\project\arm\arm_uart\wsp\arm_uart.uvproj
+Project File Date:  04/07/2025
+
+<h2>Output:</h2>
+compiling main.c...
+..\app\main.c - 0 Error(s), 0 Warning(s).

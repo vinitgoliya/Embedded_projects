@@ -1,0 +1,5 @@
+"..\bin\STARTUP.obj",
+"..\bin\main.obj",
+"..\bin\timer.obj" 
+TO "..\bin\timer_basic" 
+PRINT(".\Listings\timer_basic.m51") CODE( 0X0000-0X0FFF )

@@ -1,0 +1,97 @@
+C51 COMPILER V9.60.7.0   MAIN                                                              11/19/2024 22:36:27 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN ..\bin\main.obj
+COMPILER INVOKED BY: C:\Users\user\embedded_development\C51\BIN\C51.EXE ..\app\main.c OPTIMIZE(8,SPEED) BROWSE INCDIR(..
+                    -\include) DEBUG OBJECTEXTEND PRINT(.\Listings\main.lst) TABS(2) OBJECT(..\bin\main.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          #include<lcd.h>
+   3          #include<global.h>
+   4          #include<stepper.h>
+   5          #include<delay.h>
+   6          #include<home.h>
+   7          
+   8          void main() {
+   9   1          int door_status = 0;
+  10   1          int fan_status = 0;
+  11   1          int light_status = 0;
+  12   1          int door_pressed = 0;
+  13   1          int fan_pressed = 0;
+  14   1          int light_pressed = 0;
+  15   1          Clr_Bit(P3,0);
+  16   1          Init_LCD();
+  17   1          Set_LCD_Command(0x01);  // Clear LCD screen
+  18   1      
+  19   1          while (1) {
+  20   2              
+  21   2              if (DOOR == 0 && !door_pressed) {  
+  22   3                  delay(5000);  
+  23   3                  if (DOOR == 0) {
+  24   4                      door_pressed = 1;  
+  25   4                      if (door_status == 0) {
+  26   5                          openDoor();
+  27   5                          door_status = 1;
+  28   5                      } else {
+  29   5                          closeDoor();
+  30   5                          door_status = 0;
+  31   5                      }
+  32   4                  }
+  33   3              } else if (DOOR == 1) {
+  34   3                  door_pressed = 0; 
+  35   3              }
+  36   2      
+  37   2             
+  38   2              if (FAN == 0 && !fan_pressed) {
+  39   3                  delay(5000);  
+  40   3                  if (FAN == 0) {
+  41   4                      fan_pressed = 1;
+  42   4                      if (fan_status == 0) {
+  43   5                          fanon();
+  44   5                          fan_status = 1;
+  45   5                      } else {
+  46   5                          fanoff();
+  47   5                          fan_status = 0;
+  48   5                      }
+  49   4                  }
+  50   3              } else if (FAN == 1) {
+  51   3                  fan_pressed = 0;
+  52   3              }
+  53   2      
+  54   2          
+C51 COMPILER V9.60.7.0   MAIN                                                              11/19/2024 22:36:27 PAGE 2   
+
+  55   2              if (LIGHT == 0 && !light_pressed) {
+  56   3                  delay(5000);
+  57   3                  if (LIGHT == 0) {
+  58   4                      light_pressed = 1;
+  59   4                      if (light_status == 0) {
+  60   5                          lighton();
+  61   5                          light_status = 1;
+  62   5                      } else {
+  63   5                          lightoff();
+  64   5                          light_status = 0;
+  65   5                      }
+  66   4                  }
+  67   3              } else if (LIGHT == 1) {
+  68   3                  light_pressed = 0;
+  69   3              }
+  70   2          }
+  71   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    227    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      12
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

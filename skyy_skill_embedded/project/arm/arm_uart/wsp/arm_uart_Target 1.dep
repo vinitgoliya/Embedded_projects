@@ -1,0 +1,23 @@
+Dependencies for Project 'arm_uart', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x4F5858F0)(--cpu ARM7TDMI -g --apcs=interwork -I C:\Users\user\embedded_development\ARM\RV31\INC -I C:\Users\user\embedded_development\ARM\CMSIS\Include -I C:\Users\user\embedded_development\ARM\Inc\Philips --list "Startup.lst" --xref -o "..\bin\Startup.o" --depend "..\bin\Startup.d")
+F (..\app\main.c)(0x67F7DEF4)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I C:\Users\user\embedded_development\ARM\RV31\INC -I C:\Users\user\embedded_development\ARM\CMSIS\Include -I C:\Users\user\embedded_development\ARM\Inc\Philips -o "..\bin\main.o" --omf_browse "..\bin\main.crf" --depend "..\bin\main.d")
+I (..\include\global.h)(0x67E2D22C)
+I (..\include\pcb.h)(0x67E2D22F)
+I (..\include\lpc2148.h)(0x67F54904)
+I (..\include\pll0.h)(0x67F7DE47)
+I (..\include\delay.h)(0x67CC62E2)
+I (..\include\pconp.h)(0x67E2D234)
+I (..\include\uart0.h)(0x67F5F019)
+F (..\src\delay.c)(0x67CC62E2)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I C:\Users\user\embedded_development\ARM\RV31\INC -I C:\Users\user\embedded_development\ARM\CMSIS\Include -I C:\Users\user\embedded_development\ARM\Inc\Philips -o "..\bin\delay.o" --omf_browse "..\bin\delay.crf" --depend "..\bin\delay.d")
+I (..\include\global.h)(0x67E2D22C)
+I (..\include\delay.h)(0x67CC62E2)
+F (..\src\pll0.c)(0x67F7DE47)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I C:\Users\user\embedded_development\ARM\RV31\INC -I C:\Users\user\embedded_development\ARM\CMSIS\Include -I C:\Users\user\embedded_development\ARM\Inc\Philips -o "..\bin\pll0.o" --omf_browse "..\bin\pll0.crf" --depend "..\bin\pll0.d")
+I (..\include\global.h)(0x67E2D22C)
+I (..\include\lpc2148.h)(0x67F54904)
+I (..\include\pll0.h)(0x67F7DE47)
+F (..\src\uart0.c)(0x67F5F052)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I C:\Users\user\embedded_development\ARM\RV31\INC -I C:\Users\user\embedded_development\ARM\CMSIS\Include -I C:\Users\user\embedded_development\ARM\Inc\Philips -o "..\bin\uart0.o" --omf_browse "..\bin\uart0.crf" --depend "..\bin\uart0.d")
+I (..\include\uart0.h)(0x67F5F019)
+I (..\include\lpc2148.h)(0x67F54904)
+I (..\include\global.h)(0x67E2D22C)
+I (..\include\pcb.h)(0x67E2D22F)
+I (..\include\pconp.h)(0x67E2D234)

@@ -1,0 +1,79 @@
+C51 COMPILER V9.60.7.0   MAIN                                                              12/15/2024 17:19:30 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN ..\bin\main.obj
+COMPILER INVOKED BY: C:\Users\user\embedded_development\C51\BIN\C51.EXE ..\app\main.c OPTIMIZE(0,SPEED) BROWSE INCDIR(..
+                    -\include) DEBUG OBJECTEXTEND PRINT(.\Listings\main.lst) TABS(2) OBJECT(..\bin\main.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          #include<global.h>
+   3          #include<uart.h>
+   4          #include<interrupt.h>
+   5          
+   6          volatile unsigned char rdata=0;
+   7          
+   8          void UART_ISR(void) interrupt 4
+   9           {
+  10   1         rdata = SBUF;  // Pass the dat to variable
+  11   1         RI = 0;
+  12   1       }
+  13          
+  14          void main()
+  15           {
+  16   1         unsigned char isr_data;
+  17   1         Config_UART();
+  18   1         Enable_Interrupt();
+  19   1         Enable_UART_Interrupt();
+  20   1         Set_UART_String("Vinit kumar :");
+  21   1         Clr_Bit(P2,BIT0);
+  22   1         Clr_Bit(P2,BIT1);
+  23   1         Clr_Bit(P2,BIT2);
+  24   1         rdata = 'L';
+  25   1         while(1)
+  26   1           {
+  27   2            // rdata = Get_UART_Data();  // Received dat
+  28   2      
+  29   2             if(rdata != 0)
+  30   2             {
+  31   3               Set_UART_Data(rdata);  // Receive dat ---> and again sending to terminal
+  32   3               isr_data = rdata;
+  33   3               rdata = 0;
+  34   3               switch(isr_data)
+  35   3               {
+  36   4                 case 'L' : Set_Bit(P2,BIT0);
+  37   4                            break;
+  38   4                 case 'l' : Clr_Bit(P2,BIT0);
+  39   4                            break;
+  40   4                 case 'B' : Set_Bit(P2,BIT1);
+  41   4                            break;
+  42   4                 case 'b' : Clr_Bit(P2,BIT1);
+  43   4                            break;
+  44   4                 case 'F' : Set_Bit(P2,BIT2);
+  45   4                            break;
+  46   4                 case 'f' : Clr_Bit(P2,BIT2);
+  47   4                            break;
+  48   4               }
+  49   3               
+  50   3             }
+  51   2             
+  52   2           }
+  53   1       }
+
+C51 COMPILER V9.60.7.0   MAIN                                                              12/15/2024 17:19:30 PAGE 2   
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    111    ----
+   CONSTANT SIZE    =     14    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,5 @@
+-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include 
+-I C:\Users\user\embedded_development\ARM\RV31\INC 
+-I C:\Users\user\embedded_development\ARM\CMSIS\Include 
+-I C:\Users\user\embedded_development\ARM\Inc\Philips 
+-o "..\bin\main.o" --omf_browse "..\bin\main.crf" --depend "..\bin\main.d" "..\app\main.c"

@@ -1,0 +1,56 @@
+C51 COMPILER V9.60.7.0   STEPPER                                                           11/02/2024 11:58:57 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE STEPPER
+OBJECT MODULE PLACED IN ..\bin\stepper.obj
+COMPILER INVOKED BY: C:\Users\user\embedded_development\C51\BIN\C51.EXE ..\src\stepper.c OPTIMIZE(8,SPEED) BROWSE INCDIR
+                    -(..\include) DEBUG OBJECTEXTEND PRINT(.\Listings\stepper.lst) TABS(2) OBJECT(..\bin\stepper.obj)
+
+line level    source
+
+   1          #include<stepper.h>
+   2          #include<delay.h>
+   3          
+   4          void stepper_forward()
+   5            {
+   6   1          STEPPER_PORT = 0x01;
+   7   1          STEPPER_DELAY;
+   8   1          STEPPER_PORT = 0x02;
+   9   1          STEPPER_DELAY;
+  10   1          STEPPER_PORT = 0x04;
+  11   1          STEPPER_DELAY;
+  12   1          STEPPER_PORT = 0x08;
+  13   1          STEPPER_DELAY;
+  14   1          STEPPER_PORT = 0x00;
+  15   1          STEPPER_DELAY;
+  16   1        }
+  17            
+  18            
+  19          void stepper_backward()
+  20            {
+  21   1          STEPPER_PORT = 0x08;
+  22   1          STEPPER_DELAY;
+  23   1          STEPPER_PORT = 0x04;
+  24   1          STEPPER_DELAY;
+  25   1          STEPPER_PORT = 0x02;
+  26   1          STEPPER_DELAY;
+  27   1          STEPPER_PORT = 0x01;
+  28   1          STEPPER_DELAY;
+  29   1          STEPPER_PORT = 0x00;
+  30   1          STEPPER_DELAY;
+  31   1        }
+  32            
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    100    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

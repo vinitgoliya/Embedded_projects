@@ -1,0 +1,5 @@
+--cpu ARM7TDMI "..\bin\startup.o" "..\bin\main.o" "..\bin\delay.o" "..\bin\lcd.o" "..\bin\pll0.o" 
+--strict --scatter "..\bin\arm_lcd.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\arm_lcd.map" -o ..\bin\arm_lcd.axf
