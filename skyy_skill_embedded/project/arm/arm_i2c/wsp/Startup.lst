@@ -659,9 +659,8 @@ ARM Macro Assembler    Page 11
               00000400 
               00000000 
 Command Line: --debug --xref --apcs=interwork --depend=..\bin\Startup.d -o..\bi
-n\Startup.o -IC:\Users\user\embedded_development\ARM\RV31\INC -IC:\Users\user\e
-mbedded_development\ARM\CMSIS\Include -IC:\Users\user\embedded_development\ARM\
-Inc\Philips --list=Startup.lst Startup.s
+n\Startup.o -IE:\installed\Keil_v5\ARM\RV31\INC -IE:\installed\Keil_v5\ARM\CMSI
+S\Include -IE:\installed\Keil_v5\ARM\Inc\Philips --list=Startup.lst Startup.s
 
 
 

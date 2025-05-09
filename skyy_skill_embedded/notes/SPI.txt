@@ -1,0 +1,174 @@
+SPI
+---
+-> Serial to peripheral Interface
+-> Invented by Motorola (US)
+-> Serial Communication Protocol
+-> Synchronous Protocol
+-> Full duplex communication protocol
+
+-> Speed : Up to 10 MBPS (1MBPS to 10 MBPS)
+-> Standard Baud rate: 1MBPS to 4MBPS
+
+
+-> RTC, converters like ADC and DAC, Memory modules like EEPROM and Flash , and sensor like Temp sensor, pressur sensor or some other devices
+like potentiometer , LCD Controller, UART controller, CAN controller
+
+-> 4 Wire communication
+1. Master Out slave In(MOSI) - 
+2. Master in Slave Out(MISO)
+3. Serial Clock (SCLK or SCK)
+4. Slave select(SS)
+
+-> How many slave device you can connect at a time --> Based on availability of GPIO pins
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+SPI Driver:
+----------
+1. PIN Configuration:
+---------------------
+
+static void config_SPI0_Pins()
+{
+  PINSEL0.P0_4 = P0_4_SCK0;
+  PINSEL0.P0_5 = P0_5_MISO0;
+  PINSEL0.P0_6 = P0_4_MOSI0;
+  PINSEL0.P0_7 = P0_5_GPIO;
+
+  Set_Bit(IO0DIR,BIT7);     // IO0DIR = IO0DIR | (1<<BIT7);
+  Set_Bit(IO0SET,BIT7);     // IO0SET = IO0SET | (1<<BIT7);   -----> De selecting slave
+  
+}
+
+2. Initialization of SPI:
+------------------------
+- Config Pins
+- Power ON SPI0
+- Set the CLOCK  - 1 MHz
+   - Register - S0SPCCR
+   - 1 MHZ
+   - Processor Clock = 60 MHz
+   - 1 MHZ = Processor Clock/ SOSPCCR
+     => S0SPCCR = 60
+
+- Configure Master Mode / Slave Mode
+   - Register - S0SPCR
+   - Bit 5 – MSTR (Master Mode Select)
+	0 = SPI operates in Slave Mode
+	1 = SPI operates in Master Mode
+
+void Init_SPI0()
+{
+  config_SPI0_Pins();
+  Power_ON_SPI0();        // Power ON from PCONP.h
+  S0SPCCR = 60 ;  // Clock -> 1 MHz
+  S0SPCR = 0x0020;   // SPIO is configured as Master
+}
+
+
+3. Send SPI0 Data:
+------------------
+- Select the slave
+- Sending Data - S0SPDR
+It holds the data to be transmitted/received.
+
+- Wait for status (Either Data transmitted or not)
+  Register - S0SPSR (SPI0 Status Register)
+  Bit 7 – SPIF (SPI Transfer Complete Flag)
+	0 = SPI transfer not completed yet
+	1 = SPI transfer completed
+	This bit is cleared by reading the register, then accessing the SPI data register.
+
+
+ #define Wait_for_Status()     while(!(S0SPSR & (1<<BIT7)))
+
+
+void Set_SPI0_Data(unsigned char Dat)     // Always not 8 bit data ...It may be 10 bit also.. According that decide data type
+{
+   unsigned char Value;
+   Set_Bit(IO0CLR,BIT7);    // Select the slave
+   S0SPDR = Dat;
+   Wait_for_Status();
+   Value = S0SPDR;
+}
+
+void Set_SPI0_String(unsigned char *str)
+{
+  while(*str != NULL)
+  {
+   Set_SPI0_Data(*str);
+   str++;
+  }
+}
+
+
+4. Receive SPI0 Data:
+-------------------
+-> Select the slave
+-> Pass dummy data to slave and get the data from slave
+-> wait for data transmit
+- Slave will send actual data to Master through MISO pin
+
+unsigned char Get_SPI0_Data()
+{
+  unsigned char Value;
+  S0SPDR = 0x55;  // Dummy Data pass to get actual slave data
+  Wait_for_Status();
+  Value = S0SPDR;     // Actual Data - slave will send through S0SPDR register
+  return S0SPDR;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

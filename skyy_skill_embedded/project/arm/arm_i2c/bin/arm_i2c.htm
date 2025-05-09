@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\bin\arm_i2c.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\bin\arm_i2c.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.02 [Build 28]: Last Updated: Tue Apr 15 19:42:31 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.02 [Build 28]: Last Updated: Thu Apr 24 21:05:09 2025
 <BR><P>
 <H3>Maximum Stack Usage =         24 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -174,10 +174,11 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[b]"></a>main</STRONG> (ARM, 108 bytes, Stack size 0 bytes, main.o(.text))
+<P><STRONG><a name="[b]"></a>main</STRONG> (ARM, 116 bytes, Stack size 0 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = main &rArr; Init_Lcd &rArr; Set_Lcd_Command
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Stop_I2C0
+<BR>[Calls]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Stop_I2C0
 <LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Start_I2C0
 <LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_Lcd_Command
 <LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_Lcd_Char
@@ -196,8 +197,8 @@ Global Symbols
 <P><STRONG><a name="[21]"></a>Set_Lcd_Command</STRONG> (ARM, 156 bytes, Stack size 16 bytes, lcd.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = Set_Lcd_Command
 </UL>
-<BR>[Calls]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
-<LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Write_Lcd_Port
+<BR>[Calls]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Write_Lcd_Port
+<LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_Lcd
 <LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -206,8 +207,8 @@ Global Symbols
 <P><STRONG><a name="[22]"></a>Set_Lcd_Char</STRONG> (ARM, 156 bytes, Stack size 16 bytes, lcd.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = Set_Lcd_Char
 </UL>
-<BR>[Calls]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
-<LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Write_Lcd_Port
+<BR>[Calls]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Write_Lcd_Port
+<LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
 </UL>
 <BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_Lcd_num
 <LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_Lcd_String
@@ -233,9 +234,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[24]"></a>delay</STRONG> (ARM, 52 bytes, Stack size 0 bytes, delay.o(.text))
+<P><STRONG><a name="[23]"></a>delay</STRONG> (ARM, 52 bytes, Stack size 0 bytes, delay.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_Lcd_Command
 <LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_Lcd_Char
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[2c]"></a>Config_I2C0_Pins</STRONG> (ARM, 48 bytes, Stack size 0 bytes, i2c.o(.text))
@@ -401,7 +403,7 @@ Local Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_Lcd
 </UL>
 
-<P><STRONG><a name="[23]"></a>Write_Lcd_Port</STRONG> (ARM, 24 bytes, Stack size 0 bytes, lcd.o(.text))
+<P><STRONG><a name="[24]"></a>Write_Lcd_Port</STRONG> (ARM, 24 bytes, Stack size 0 bytes, lcd.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_Lcd_Command
 <LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_Lcd_Char
 </UL>

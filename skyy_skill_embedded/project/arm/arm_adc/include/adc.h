@@ -12,6 +12,8 @@
 #define Stop_ADC0()        Clr_Bit(AD0CR,BIT24)
 //#define Wait_ADC0()    while(!(AD0DR1 & (1<<BIT31)))
 #define Wait_ADC0()		while(!(AD0DR1 & 0x80000000))
+	
+void init_ADC0(void);
 
 void Config_ADC_Pin(void);
 

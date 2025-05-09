@@ -1,5 +1,5 @@
 -c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include 
--I C:\Users\user\embedded_development\ARM\RV31\INC 
--I C:\Users\user\embedded_development\ARM\CMSIS\Include 
--I C:\Users\user\embedded_development\ARM\Inc\Philips 
+-I E:\installed\Keil_v5\ARM\RV31\INC 
+-I E:\installed\Keil_v5\ARM\CMSIS\Include 
+-I E:\installed\Keil_v5\ARM\Inc\Philips 
 -o "..\bin\pll0.o" --omf_browse "..\bin\pll0.crf" --depend "..\bin\pll0.d" "..\src\pll0.c"

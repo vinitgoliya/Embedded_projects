@@ -8,14 +8,17 @@
 
 int main()
 {
+	unsigned char rData;
 	Power_Off_Peripherals();
 	Init_PLL0();
 	Init_UART0();
-	Set_UART_Data('A');
+	//Set_UART_Data('A');
+	Set_UART_string("vinit kumar Hello world");
 	
 	while(1)
 	{
-		
+		rData = Get_UART0_Data();
+		Set_UART_Data(rData);
   }
 
 }

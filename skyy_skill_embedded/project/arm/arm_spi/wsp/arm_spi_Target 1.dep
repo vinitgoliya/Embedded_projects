@@ -1,0 +1,33 @@
+Dependencies for Project 'arm_spi', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x4F5858F0)(--cpu ARM7TDMI -g --apcs=interwork -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips --list "Startup.lst" --xref -o "..\bin\Startup.o" --depend "..\bin\Startup.d")
+F (..\app\main.c)(0x681AD2AE)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\main.o" --omf_browse "..\bin\main.crf" --depend "..\bin\main.d")
+I (..\include\lpc2148.h)(0x6805B3F3)
+I (..\include\global.h)(0x6805B3F3)
+I (..\include\pconp.h)(0x6805B3F3)
+I (..\include\pll0.h)(0x6805B3F3)
+I (..\include\delay.h)(0x6805B3F3)
+I (..\include\spi.h)(0x681AD2FD)
+I (..\include\lcd.h)(0x6805B3F3)
+I (..\include\pcb.h)(0x6805B3F3)
+F (..\src\delay.c)(0x6805B3F3)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\delay.o" --omf_browse "..\bin\delay.crf" --depend "..\bin\delay.d")
+I (..\include\global.h)(0x6805B3F3)
+I (..\include\delay.h)(0x6805B3F3)
+I (..\include\lpc2148.h)(0x6805B3F3)
+F (..\src\lcd.c)(0x6805B3F3)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\lcd.o" --omf_browse "..\bin\lcd.crf" --depend "..\bin\lcd.d")
+I (..\include\global.h)(0x6805B3F3)
+I (..\include\pcb.h)(0x6805B3F3)
+I (..\include\lpc2148.h)(0x6805B3F3)
+I (..\include\lcd.h)(0x6805B3F3)
+I (..\include\delay.h)(0x6805B3F3)
+I (..\include\pll0.h)(0x6805B3F3)
+I (E:\installed\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0F5AE)
+F (..\src\pll0.c)(0x6805B3F4)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\pll0.o" --omf_browse "..\bin\pll0.crf" --depend "..\bin\pll0.d")
+I (..\include\global.h)(0x6805B3F3)
+I (..\include\lpc2148.h)(0x6805B3F3)
+I (..\include\pll0.h)(0x6805B3F3)
+F (..\src\spi.c)(0x681AD2FD)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\spi.o" --omf_browse "..\bin\spi.crf" --depend "..\bin\spi.d")
+I (..\include\spi.h)(0x681AD2FD)
+I (..\include\pcb.h)(0x6805B3F3)
+I (..\include\pconp.h)(0x6805B3F3)
+I (..\include\global.h)(0x6805B3F3)
+I (..\include\lpc2148.h)(0x6805B3F3)

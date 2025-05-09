@@ -1,0 +1,18 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\Development\Embedded\repositories\Embedded_projects\skyy_skill_embedded\project\arm\arm_spi\wsp\arm_spi.uvproj
+Project File Date:  04/27/2025
+
+<h2>Output:</h2>
+compiling main.c...
+..\app\main.c(9): error:  #65: expected a ";"
+..\app\main.c(14): warning:  #1-D: last line of file ends without a newline
+..\app\main.c(14): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+..\app\main.c - 1 Error(s), 2 Warning(s).
+compiling main.c...
+..\app\main.c(9): error:  #65: expected a ";"
+..\app\main.c(14): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+..\app\main.c - 1 Error(s), 1 Warning(s).

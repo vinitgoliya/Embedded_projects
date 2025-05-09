@@ -16,7 +16,7 @@
 ### ADS-LD Output File: '..\bin\arm_i2c.axf'
 ### ADS-LD Command File: '..\bin\arm_i2c.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '..\bin\arm_i2c.lnp', Handle=0x000006A8
+### Creating CmdFile '..\bin\arm_i2c.lnp', Handle=0x00000620
 ### Writing '.lnp' file
 ### ADS-LD Command file '..\bin\arm_i2c.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

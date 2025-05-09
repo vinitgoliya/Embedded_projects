@@ -1,0 +1,328 @@
+ADC Driver:
+------------
+1. Initialization
+      - Associated Pin selection
+      - PCONP
+      - Wakeup ADC
+      - De select all the inputs
+      - Set the ADC clock - 1 MHZ
+
+2. Choosing ADC Inputs
+
+3. Get ADC Count
+     - Starting ADC
+     - Wating for ADC to convert
+     - Read ADC Count
+
+
+
+
+--------------------------------------------------------------------
+Initialization:
+--------------
+
+Associated Pin Selection:
+-------------------------
+AD0.1  --> Pin No: P0_28
+
+void Config_pin()
+{
+	PINSEL1.P0_28 = P0_28_AD01;	
+}
+
+PCONP:
+-----
+Power_On_ADC0();
+
+
+Wakeup ADC:
+----------
+AD0CR - Bit 21
+
+Bit 21 – PDN
+0 = ADC is in Power Down mode
+1 = ADC is operational
+
+#define Disable_ADC0_Powerdownmode()     Set_Bit(AD0CR,BIT21)
+#define Enable_ADC0_Powerdownmode()      Clr_Bit(AD0CR,BIT21)
+
+De select all the inputs:
+-----------------------
+Register: AD0CR
+-> We need to clear 0th to 7th bit of AD0CR
+
+void DE_Select_ADC0_Input()
+{
+  Clr_Bit(ADC0CR,BIT0);
+                 BIT1
+                 BIT2
+                 BIT3
+                 BIT4
+                 BIT5
+                 BIT6
+                 BIT7
+
+OR
+
+AD0CR = AD0CR & (~(0x000000FF));
+
+}
+
+Set the ADC clock - 1 MHZ:
+-------------------------
+
+ADC Clock = PCLK/(Clock DIV +1)
+
+PCLK -> Processor Clock = 60MHz
+
+Bits 15:8 – CLKDIV
+The APB(ARM Peripheral Bus)clock is divided by this value plus one, to produce the clock for ADC.
+This clock should be less than or equal to 4.5MHz.
+
+I want ADC clock as 1Mhz
+
+ADC Clock = 1 MHz
+
+1 Mhz = 60Mhz / (Clock DIV +1)
+=> Clock DIV = 59
+
+That means Bit no 8 to Bit no 15 : the value should be 59.
+
+void Set_ADC0_Clock()
+{
+  AD0CR = (AD0CR & 0xFFFF00FF) | (59<<8);
+}
+
+
+Choosing ADC Inputs:
+-------------------
+AD0CR:
+------
+
+Bit 0 to Bit 7 : ADC Input
+
+Bits 7:0 – SEL
+These bits select ADC0 channel as analog input. In software-controlled mode, only one of these bits should be 1.e.g. bit 7 (10000000) selects AD0.7 channel as analog input.
+
+EX;
+AD01 , BIT1 of AD0CR is to be set
+AD02 , BIT2 of AD0CR is to be set
+
+#define Select_AD01()     Set_Bit(AD0CR,BIT1)
+#define Select_AD02()     Set_Bit(AD0CR,BIT2)
+
+Before doing this one 1st you need to deselect all adc inputs.
+
+
+Get ADC Count:
+-------------
+1. Starting ADC:
+---------------
+Register: AD0CR
+
+Bit 26:24 – START
+When BURST bit is 0, these bits control whether and when A/D conversion is started
+000 = No start (Should be used when clearing PDN to 0)
+001 = Start conversion now
+010 = Start conversion when edge selected by bit 27 of this register occurs on CAP0.2/MAT0.2 pin
+011= Start conversion  when edge selected by bit 27 of this register occurs on CAP0.0/MAT0.0 pin
+100 = Start conversion when edge selected by bit 27 of this register occurs on MAT0.1 pin
+101 = Start conversion when edge selected by bit 27 of this register occurs on MAT0.3 pin
+110 = Start conversion when edge selected by bit 27 of this register occurs on MAT1.0 pin
+111 = Start conversion when edge selected by bit 27 of this register occurs on MAT1.1 pin
+
+if We want to start the conversion
+Bit 24 = 1
+    25 = 0
+    26 = 0
+
+#define Start_ADC0()       Set_Bit(AD0CR,BIT24)
+#define Stop_ADC0()        Clr_Bit(AD0CR,BIT24)
+
+
+Waiting for ADC to convert:
+-------------------------
+AD0DR0-AD0DR7 (ADC0 Data Registers)
+
+These are 32-bit registers.
+They hold the result when A/D conversion is completed.
+They also include flags that indicate when a conversion has been completed and when a conversion overrun has occurred.
+
+Bit 31 – DONE
+This bit is set to 1 when an A/D conversion completes. It is cleared when this register is read.
+
+#define Wait_ADC0()    while(!(AD0DR1 & (1<<BIT31)))
+
+Read ADC Count:
+--------------
+AD0DR0-AD0DR7 (ADC0 Data Registers)
+
+These are 32-bit registers.
+They hold the result when A/D conversion is completed.
+They also include flags that indicate when a conversion has been completed and when a conversion overrun has occurred.
+
+
+Bits 15:6 – RESULT
+When DONE bit is set to 1, this field contains 10-bit ADC result that has a value in the range of 0 (less than or equal to VSSA) to 1023 (greater than or equal to VREF).
+
+-> The ADC 10 bit count is available from BIT6 to Bit15 0f AD0DR1.
+
+
+unsigned int adc_result = 0;
+
+adc_result = (AD0DR1 >>6) & 0x000003FF;
+
+unsigned int Get_AD01_Count()
+{
+  unsigned int adc_result = 0;
+
+  adc_result = (AD0DR1 >>6) & 0x000003FF;
+
+   return adc_result;
+}
+
+
+
+------------------------------------------------------------------------------------------------------------------
+Project:
+-------
+Write a program to read the ADC Count (AD01) and mesure the voltage.
+
+Solution:
+--------
+1 Count = 3mv
+
+Analog I/P          Count            Measured Voltage
+-------------------------------------------------------
+0                   0                    0
+3mv                 1                    3mv
+60mv                20                   60mv
+300mv               100                  298mv
+1200mv              400                  1198mv
+2400mv              -                    2399mv
+
+
+
+
+void main()
+{
+ unsigned int adc_Count;
+ while(1)
+  {
+     adc_Count = Get_AD01_Count();
+     int voltage_mesured = adc_Count * 3;
+
+
+   }
+}
+
+----------------------------------------------------------------------------
+Ex. Write a program to measure the temperature from Environment.
+
+Solution:
+---------
+Sensor -> LM35
+LM35 Sensor is temperature sensor which gives 10mv per 1 degree in Temp.
+
+
+10mv --> 1 Degree
+Lets Room temperature ---> 30 Degree
+Sesnor will detect analog Voltage = 30 * 10mv = 300mv
+
+
+void main()
+{
+ unsigned int adc_Count;
+ while(1)
+  {
+     adc_Count = Get_AD01_Count();
+     int voltage_mesured = adc_Count * 3;
+     int room_Temp = voltage_mesured/10;
+
+
+   }
+}
+
+-----------------------------------------------------------------------------------------------------------------------------
+DAC  (Digital to Analog Convertion)
+----
+Aout  ---> P0.25
+
+-> single Pin 
+-> NO PCONP required for DAC
+
+
+Register Configuration:
+DACR (DAC Register)
+
+
+
+DAC DRIVER:
+------------
+1. Pin Configuration
+2. Set the DAC Value in DACR (Bit6 to 15)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,5 @@
 --cpu ARM7TDMI -g --apcs=interwork 
--I C:\Users\user\embedded_development\ARM\RV31\INC 
--I C:\Users\user\embedded_development\ARM\CMSIS\Include 
--I C:\Users\user\embedded_development\ARM\Inc\Philips 
+-I E:\installed\Keil_v5\ARM\RV31\INC 
+-I E:\installed\Keil_v5\ARM\CMSIS\Include 
+-I E:\installed\Keil_v5\ARM\Inc\Philips 
 --list "Startup.lst" --xref -o "..\bin\Startup.o" --depend "..\bin\Startup.d" "Startup.s"

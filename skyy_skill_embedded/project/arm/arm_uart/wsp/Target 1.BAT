@@ -1,12 +1,12 @@
-SET PATH=C:\Users\user\embedded_development\ARM\ARMCC\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\user\development\sdks\flutter\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;
+SET PATH=E:\installed\Keil_v5\ARM\ARMCC\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps;C:\Users\Lenovo\AppData\Local\GitHubDesktop\bin
 SET CPU_TYPE=LPC2148
 SET CPU_VENDOR=NXP (founded by Philips)
 SET UV2_TARGET=Target 1
 SET CPU_CLOCK=0x03938700
-"C:\Users\user\embedded_development\ARM\ARMCC\bin\ArmAsm" --Via "..\bin\startup._ia"
-"C:\Users\user\embedded_development\ARM\ARMCC\bin\ArmCC" --Via "..\bin\main.__i"
-"C:\Users\user\embedded_development\ARM\ARMCC\bin\ArmCC" --Via "..\bin\delay.__i"
-"C:\Users\user\embedded_development\ARM\ARMCC\bin\ArmCC" --Via "..\bin\pll0.__i"
-"C:\Users\user\embedded_development\ARM\ARMCC\bin\ArmCC" --Via "..\bin\uart0.__i"
-"C:\Users\user\embedded_development\ARM\ARMCC\bin\ArmLink" --Via "..\bin\arm_uart.lnp"
-C:\Users\user\embedded_development\ARM\ARMCC\bin\fromelf.exe "..\bin\arm_uart.axf" --i32combined --output "..\bin\arm_uart.hex"
+"E:\installed\Keil_v5\ARM\ARMCC\bin\ArmAsm" --Via "..\bin\startup._ia"
+"E:\installed\Keil_v5\ARM\ARMCC\bin\ArmCC" --Via "..\bin\main.__i"
+"E:\installed\Keil_v5\ARM\ARMCC\bin\ArmCC" --Via "..\bin\delay.__i"
+"E:\installed\Keil_v5\ARM\ARMCC\bin\ArmCC" --Via "..\bin\pll0.__i"
+"E:\installed\Keil_v5\ARM\ARMCC\bin\ArmCC" --Via "..\bin\uart0.__i"
+"E:\installed\Keil_v5\ARM\ARMCC\bin\ArmLink" --Via "..\bin\arm_uart.lnp"
+E:\installed\Keil_v5\ARM\ARMCC\bin\fromelf.exe "..\bin\arm_uart.axf" --i32combined --output "..\bin\arm_uart.hex"

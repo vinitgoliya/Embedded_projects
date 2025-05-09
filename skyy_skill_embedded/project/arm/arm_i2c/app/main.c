@@ -39,6 +39,7 @@ int main()
 	
 	//Set_Lcd_String ("SASWAT PRADHAN");
 		Set_Lcd_Char(received_data);
+		delay(500);
   }
 }
 
