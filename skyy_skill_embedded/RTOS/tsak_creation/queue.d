@@ -1,0 +1,17 @@
+queue.o: E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\queue.c
+queue.o: E:\installed\Keil_v5\ARM\ARMCC\bin\..\include\stdlib.h
+queue.o: E:\installed\Keil_v5\ARM\ARMCC\bin\..\include\string.h
+queue.o: E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\FreeRTOS.h
+queue.o: E:\installed\Keil_v5\ARM\ARMCC\bin\..\include\stddef.h
+queue.o: E:\installed\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+queue.o: E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\FreeRTOSConfig.h
+queue.o: E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h
+queue.o: .\include\global.h
+queue.o: E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\projdefs.h
+queue.o: E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\portable.h
+queue.o: E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\deprecated_definitions.h
+queue.o: E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\..\..\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h
+queue.o: E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\mpu_wrappers.h
+queue.o: E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\task.h
+queue.o: E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\list.h
+queue.o: E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\queue.h

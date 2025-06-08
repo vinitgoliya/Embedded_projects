@@ -260,26 +260,26 @@ Image Symbol Table
     .ARM.Collect$$rtexit$$00000004           0x000001ec   Section        8  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
     .text                                    0x000001f4   Section       32  startup.o(.text)
     .text                                    0x00000214   Section        0  main.o(.text)
-    .text                                    0x00000270   Section        0  delay.o(.text)
-    .text                                    0x000002a4   Section        0  lcd.o(.text)
-    Config_Lcd_Pins                          0x0000050c   ARM Code     172  lcd.o(.text)
-    Write_Lcd_Port                           0x000005b8   ARM Code      24  lcd.o(.text)
-    .text                                    0x000005d8   Section        0  pll0.o(.text)
-    .text                                    0x0000066c   Section        0  spi.o(.text)
-    config_SPI0_Pins                         0x0000066c   ARM Code     120  spi.o(.text)
-    .text                                    0x000007bc   Section      384  aeabi_sdiv.o(.text)
-    __arm_div8                               0x000007e8   ARM Code       0  aeabi_sdiv.o(.text)
-    __arm_div5                               0x0000080c   ARM Code       0  aeabi_sdiv.o(.text)
-    __arm_div2                               0x00000830   ARM Code       0  aeabi_sdiv.o(.text)
-    __arm_div_large                          0x0000086c   ARM Code       0  aeabi_sdiv.o(.text)
-    .text                                    0x0000093c   Section        0  heapauxi.o(.text)
-    .text                                    0x00000944   Section       96  sys_stackheap_outer.o(.text)
-    .text                                    0x000009a4   Section        0  exit.o(.text)
-    .text                                    0x000009b0   Section       12  libspace.o(.text)
-    .text                                    0x000009c4   Section        0  sys_exit.o(.text)
-    .text                                    0x000009d0   Section        4  use_no_semi.o(.text)
-    .text                                    0x000009d4   Section        0  indicate_semi.o(.text)
-    .text_udiv                               0x000009d4   Section       36  aeabi_sdiv.o(.text_udiv)
+    .text                                    0x000002f4   Section        0  delay.o(.text)
+    .text                                    0x00000328   Section        0  lcd.o(.text)
+    Config_Lcd_Pins                          0x00000590   ARM Code     172  lcd.o(.text)
+    Write_Lcd_Port                           0x0000063c   ARM Code      24  lcd.o(.text)
+    .text                                    0x0000065c   Section        0  pll0.o(.text)
+    .text                                    0x000006f0   Section        0  spi.o(.text)
+    config_SPI0_Pins                         0x000006f0   ARM Code     124  spi.o(.text)
+    .text                                    0x00000880   Section      384  aeabi_sdiv.o(.text)
+    __arm_div8                               0x000008ac   ARM Code       0  aeabi_sdiv.o(.text)
+    __arm_div5                               0x000008d0   ARM Code       0  aeabi_sdiv.o(.text)
+    __arm_div2                               0x000008f4   ARM Code       0  aeabi_sdiv.o(.text)
+    __arm_div_large                          0x00000930   ARM Code       0  aeabi_sdiv.o(.text)
+    .text                                    0x00000a00   Section        0  heapauxi.o(.text)
+    .text                                    0x00000a08   Section       96  sys_stackheap_outer.o(.text)
+    .text                                    0x00000a68   Section        0  exit.o(.text)
+    .text                                    0x00000a74   Section       12  libspace.o(.text)
+    .text                                    0x00000a88   Section        0  sys_exit.o(.text)
+    .text                                    0x00000a94   Section        4  use_no_semi.o(.text)
+    .text                                    0x00000a98   Section        0  indicate_semi.o(.text)
+    .text_udiv                               0x00000a98   Section       36  aeabi_sdiv.o(.text_udiv)
     .bss                                     0x40000000   Section       96  libspace.o(.bss)
     HEAP                                     0x40000060   Section        0  startup.o(HEAP)
     STACK                                    0x40000060   Section     1160  startup.o(STACK)
@@ -369,37 +369,39 @@ Image Symbol Table
     __rt_exit_prels_1                        0x000001e8   ARM Code       0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
     __rt_exit_exit                           0x000001ec   ARM Code       0  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
     __user_initial_stackheap                 0x000001f4   ARM Code       0  startup.o(.text)
-    main                                     0x00000214   ARM Code      76  main.o(.text)
-    delay                                    0x00000270   ARM Code      52  delay.o(.text)
-    Set_Lcd_Command                          0x000002a4   ARM Code     156  lcd.o(.text)
-    Set_Lcd_Char                             0x00000340   ARM Code     156  lcd.o(.text)
-    Set_Lcd_String                           0x000003dc   ARM Code      44  lcd.o(.text)
-    Set_Lcd_num                              0x00000408   ARM Code     176  lcd.o(.text)
-    Init_Lcd                                 0x000004b8   ARM Code      84  lcd.o(.text)
-    Init_PLL0                                0x000005d8   ARM Code     144  pll0.o(.text)
-    Init_Spi0                                0x000006e4   ARM Code      56  spi.o(.text)
-    Set_SPI0_Data                            0x0000071c   ARM Code      52  spi.o(.text)
-    Set_SPI0_String                          0x00000750   ARM Code      44  spi.o(.text)
-    Get_SPI0_Data                            0x0000077c   ARM Code      48  spi.o(.text)
-    __aeabi_idiv                             0x000007bc   ARM Code       0  aeabi_sdiv.o(.text)
-    __aeabi_idivmod                          0x000007bc   ARM Code     384  aeabi_sdiv.o(.text)
-    __use_two_region_memory                  0x0000093d   Thumb Code     2  heapauxi.o(.text)
-    __rt_heap_escrow$2region                 0x0000093f   Thumb Code     2  heapauxi.o(.text)
-    __rt_heap_expand$2region                 0x00000941   Thumb Code     2  heapauxi.o(.text)
-    __user_setup_stackheap                   0x00000944   ARM Code      96  sys_stackheap_outer.o(.text)
-    exit                                     0x000009a5   Thumb Code    12  exit.o(.text)
-    __user_libspace                          0x000009b0   ARM Code      12  libspace.o(.text)
-    __user_perproc_libspace                  0x000009b0   ARM Code       0  libspace.o(.text)
-    __user_perthread_libspace                0x000009b0   ARM Code       0  libspace.o(.text)
-    Inline ARM to Thumb Veneer to _sys_exit  0x000009bc   ARM Code       8  sys_exit.o(.text)
-    _sys_exit                                0x000009c5   Thumb Code     8  sys_exit.o(.text)
-    __I$use$semihosting                      0x000009d0   ARM Code       0  use_no_semi.o(.text)
-    __use_no_semihosting_swi                 0x000009d0   ARM Code       4  use_no_semi.o(.text)
-    __aeabi_uidiv                            0x000009d4   ARM Code       0  aeabi_sdiv.o(.text_udiv)
-    __aeabi_uidivmod                         0x000009d4   ARM Code      36  aeabi_sdiv.o(.text_udiv)
-    __semihosting_library_function           0x000009d4   ARM Code       0  indicate_semi.o(.text)
-    Region$$Table$$Base                      0x000009f8   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00000a08   Number         0  anon$$obj.o(Region$$Table)
+    SPI_Master_Write                         0x00000214   ARM Code      56  main.o(.text)
+    SPI_Master_Read                          0x0000024c   ARM Code      72  main.o(.text)
+    main                                     0x00000294   ARM Code      80  main.o(.text)
+    delay                                    0x000002f4   ARM Code      52  delay.o(.text)
+    Set_Lcd_Command                          0x00000328   ARM Code     156  lcd.o(.text)
+    Set_Lcd_Char                             0x000003c4   ARM Code     156  lcd.o(.text)
+    Set_Lcd_String                           0x00000460   ARM Code      44  lcd.o(.text)
+    Set_Lcd_num                              0x0000048c   ARM Code     176  lcd.o(.text)
+    Init_Lcd                                 0x0000053c   ARM Code      84  lcd.o(.text)
+    Init_PLL0                                0x0000065c   ARM Code     144  pll0.o(.text)
+    Init_Spi0                                0x0000076c   ARM Code      56  spi.o(.text)
+    Set_SPI0_Data                            0x000007a4   ARM Code      72  spi.o(.text)
+    Set_SPI0_String                          0x000007ec   ARM Code      44  spi.o(.text)
+    Get_SPI0_Data                            0x00000818   ARM Code      88  spi.o(.text)
+    __aeabi_idiv                             0x00000880   ARM Code       0  aeabi_sdiv.o(.text)
+    __aeabi_idivmod                          0x00000880   ARM Code     384  aeabi_sdiv.o(.text)
+    __use_two_region_memory                  0x00000a01   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_escrow$2region                 0x00000a03   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_expand$2region                 0x00000a05   Thumb Code     2  heapauxi.o(.text)
+    __user_setup_stackheap                   0x00000a08   ARM Code      96  sys_stackheap_outer.o(.text)
+    exit                                     0x00000a69   Thumb Code    12  exit.o(.text)
+    __user_libspace                          0x00000a74   ARM Code      12  libspace.o(.text)
+    __user_perproc_libspace                  0x00000a74   ARM Code       0  libspace.o(.text)
+    __user_perthread_libspace                0x00000a74   ARM Code       0  libspace.o(.text)
+    Inline ARM to Thumb Veneer to _sys_exit  0x00000a80   ARM Code       8  sys_exit.o(.text)
+    _sys_exit                                0x00000a89   Thumb Code     8  sys_exit.o(.text)
+    __I$use$semihosting                      0x00000a94   ARM Code       0  use_no_semi.o(.text)
+    __use_no_semihosting_swi                 0x00000a94   ARM Code       4  use_no_semi.o(.text)
+    __aeabi_uidiv                            0x00000a98   ARM Code       0  aeabi_sdiv.o(.text_udiv)
+    __aeabi_uidivmod                         0x00000a98   ARM Code      36  aeabi_sdiv.o(.text_udiv)
+    __semihosting_library_function           0x00000a98   ARM Code       0  indicate_semi.o(.text)
+    Region$$Table$$Base                      0x00000abc   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00000acc   Number         0  anon$$obj.o(Region$$Table)
     __libspace_start                         0x40000000   Data          96  libspace.o(.bss)
     __temporary_stack_top$libspace           0x40000060   Data           0  libspace.o(.bss)
 
@@ -411,9 +413,9 @@ Memory Map of the image
 
   Image Entry point : 0x00000110
 
-  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00000a08, Max: 0x00080000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00000acc, Max: 0x00080000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00000a08, Max: 0x00080000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00000acc, Max: 0x00080000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -466,23 +468,23 @@ Memory Map of the image
     0x000001e8   0x00000004   Code   RO          216    .ARM.Collect$$rtexit$$00000003  c_t.l(rtexit2.o)
     0x000001ec   0x00000008   Code   RO          217    .ARM.Collect$$rtexit$$00000004  c_t.l(rtexit2.o)
     0x000001f4   0x00000020   Code   RO            4    .text               startup.o
-    0x00000214   0x0000005c   Code   RO           11    .text               main.o
-    0x00000270   0x00000034   Code   RO           48    .text               delay.o
-    0x000002a4   0x00000334   Code   RO           60    .text               lcd.o
-    0x000005d8   0x00000094   Code   RO           76    .text               pll0.o
-    0x0000066c   0x00000150   Code   RO           88    .text               spi.o
-    0x000007bc   0x00000180   Code   RO          102    .text               c_t.l(aeabi_sdiv.o)
-    0x0000093c   0x00000006   Code   RO          118    .text               c_t.l(heapauxi.o)
-    0x00000942   0x00000002   PAD
-    0x00000944   0x00000060   Code   RO          144    .text               c_t.l(sys_stackheap_outer.o)
-    0x000009a4   0x0000000c   Code   RO          146    .text               c_t.l(exit.o)
-    0x000009b0   0x0000000c   Code   RO          158    .text               c_t.l(libspace.o)
-    0x000009bc   0x00000008   Ven    RO          212    .text               c_t.l(sys_exit.o)
-    0x000009c4   0x0000000c   Code   RO          212    .text               c_t.l(sys_exit.o)
-    0x000009d0   0x00000004   Code   RO          233    .text               c_t.l(use_no_semi.o)
-    0x000009d4   0x00000000   Code   RO          235    .text               c_t.l(indicate_semi.o)
-    0x000009d4   0x00000024   Code   RO          103    .text_udiv          c_t.l(aeabi_sdiv.o)
-    0x000009f8   0x00000010   Data   RO          284    Region$$Table       anon$$obj.o
+    0x00000214   0x000000e0   Code   RO           11    .text               main.o
+    0x000002f4   0x00000034   Code   RO           48    .text               delay.o
+    0x00000328   0x00000334   Code   RO           60    .text               lcd.o
+    0x0000065c   0x00000094   Code   RO           76    .text               pll0.o
+    0x000006f0   0x00000190   Code   RO           88    .text               spi.o
+    0x00000880   0x00000180   Code   RO          102    .text               c_t.l(aeabi_sdiv.o)
+    0x00000a00   0x00000006   Code   RO          118    .text               c_t.l(heapauxi.o)
+    0x00000a06   0x00000002   PAD
+    0x00000a08   0x00000060   Code   RO          144    .text               c_t.l(sys_stackheap_outer.o)
+    0x00000a68   0x0000000c   Code   RO          146    .text               c_t.l(exit.o)
+    0x00000a74   0x0000000c   Code   RO          158    .text               c_t.l(libspace.o)
+    0x00000a80   0x00000008   Ven    RO          212    .text               c_t.l(sys_exit.o)
+    0x00000a88   0x0000000c   Code   RO          212    .text               c_t.l(sys_exit.o)
+    0x00000a94   0x00000004   Code   RO          233    .text               c_t.l(use_no_semi.o)
+    0x00000a98   0x00000000   Code   RO          235    .text               c_t.l(indicate_semi.o)
+    0x00000a98   0x00000024   Code   RO          103    .text_udiv          c_t.l(aeabi_sdiv.o)
+    0x00000abc   0x00000010   Data   RO          284    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x40000000, Size: 0x000004e8, Max: 0x00008000, ABSOLUTE)
@@ -503,13 +505,13 @@ Image component sizes
 
         52          0          0          0          0        504   delay.o
        820          8          0          0          0       2447   lcd.o
-        92         16          0          0          0       2875   main.o
+       224         16          0          0          0       3288   main.o
        148          4          0          0          0        476   pll0.o
-       336         16          0          0          0       1116   spi.o
+       400         16          0          0          0       1136   spi.o
        304         60          0          0       1160        572   startup.o
 
     ----------------------------------------------------------------------
-      1752        104         16          0       1160       7990   Object Totals
+      1948        104         16          0       1160       8423   Object Totals
          0          0         16          0          0          0   (incl. Generated)
          0          0          0          0          0          0   (incl. Padding)
 
@@ -558,15 +560,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      2552        124         16          0       1256       8126   Grand Totals
-      2552        124         16          0       1256       8126   ELF Image Totals
-      2552        124         16          0          0          0   ROM Totals
+      2748        124         16          0       1256       8455   Grand Totals
+      2748        124         16          0       1256       8455   ELF Image Totals
+      2748        124         16          0          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 2568 (   2.51kB)
+    Total RO  Size (Code + RO Data)                 2764 (   2.70kB)
     Total RW  Size (RW Data + ZI Data)              1256 (   1.23kB)
-    Total ROM Size (Code + RO Data + RW Data)       2568 (   2.51kB)
+    Total ROM Size (Code + RO Data + RW Data)       2764 (   2.70kB)
 
 ==============================================================================
 

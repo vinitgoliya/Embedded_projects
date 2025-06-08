@@ -1,0 +1,629 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\Development\Embedded\repositories\Embedded_projects\skyy_skill_embedded\RTOS\tsak_creation\task_creation.uvproj
+Project File Date:  05/30/2025
+
+<h2>Output:</h2>
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling list.c...
+compiling queue.c...
+E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\queue.c(472): warning:  #177-D: function "prvInitialiseMutex" was declared but never referenced
+compiling tasks.c...
+compiling heap_2.c...
+compiling port.c...
+assembling portASM.s...
+compiling main.c...
+linking...
+task_creation.axf: Error: L6218E: Undefined symbol Init_PLL0 (referred from main.o).
+task_creation.axf: Error: L6218E: Undefined symbol task1 (referred from main.o).
+task_creation.axf: Error: L6218E: Undefined symbol task2 (referred from main.o).
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+task_creation.axf: Error: L6218E: Undefined symbol Init_PLL0 (referred from main.o).
+Target not created
+Build target 'Target 1'
+linking...
+task_creation.axf: Error: L6218E: Undefined symbol Init_PLL0 (referred from main.o).
+Target not created
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling list.c...
+compiling queue.c...
+E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\queue.c(472): warning:  #177-D: function "prvInitialiseMutex" was declared but never referenced
+compiling tasks.c...
+compiling heap_2.c...
+compiling port.c...
+assembling portASM.s...
+compiling main.c...
+linking...
+task_creation.axf: Error: L6218E: Undefined symbol Init_PLL0 (referred from main.o).
+Target not created
+compiling main.c...
+main.c(10): error:  #5: cannot open source input file "uart.h": No such file or directory
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+compiling uart0.c...
+.\include\lpc2148.h(65): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(66): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(67): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(68): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(69): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(70): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(71): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(72): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(73): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(74): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(75): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(76): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(77): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(78): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(79): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(80): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(86): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(87): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(88): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(89): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(90): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(91): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(92): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(93): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(94): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(95): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(96): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(97): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(98): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(99): error:  #20: identifier "u32_t" is undefined
+include\uart0.c - 30 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling list.c...
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(67): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(68): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(69): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(70): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(71): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(72): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(73): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(74): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(75): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(76): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(77): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(78): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(79): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(80): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(81): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(82): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(88): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(89): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(90): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(91): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(92): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(93): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(94): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(95): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(96): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(97): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(98): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(99): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(100): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(101): error:  #20: identifier "u32_t" is undefined
+compiling queue.c...
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(67): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(68): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(69): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(70): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(71): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(72): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(73): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(74): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(75): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(76): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(77): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(78): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(79): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(80): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(81): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(82): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(88): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(89): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(90): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(91): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(92): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(93): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(94): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(95): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(96): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(97): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(98): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(99): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(100): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(101): error:  #20: identifier "u32_t" is undefined
+compiling tasks.c...
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(67): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(68): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(69): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(70): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(71): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(72): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(73): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(74): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(75): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(76): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(77): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(78): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(79): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(80): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(81): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(82): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(88): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(89): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(90): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(91): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(92): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(93): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(94): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(95): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(96): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(97): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(98): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(99): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(100): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(101): error:  #20: identifier "u32_t" is undefined
+compiling heap_2.c...
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(67): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(68): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(69): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(70): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(71): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(72): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(73): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(74): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(75): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(76): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(77): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(78): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(79): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(80): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(81): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(82): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(88): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(89): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(90): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(91): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(92): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(93): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(94): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(95): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(96): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(97): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(98): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(99): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(100): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(101): error:  #20: identifier "u32_t" is undefined
+compiling port.c...
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(67): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(68): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(69): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(70): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(71): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(72): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(73): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(74): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(75): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(76): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(77): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(78): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(79): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(80): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(81): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(82): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(88): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(89): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(90): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(91): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(92): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(93): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(94): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(95): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(96): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(97): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(98): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(99): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(100): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(101): error:  #20: identifier "u32_t" is undefined
+assembling portASM.s...
+compiling main.c...
+compiling pll0.c...
+compiling uart0.c...
+.\include\lpc2148.h(65): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(66): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(67): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(68): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(69): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(70): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(71): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(72): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(73): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(74): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(75): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(76): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(77): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(78): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(79): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(80): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(86): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(87): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(88): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(89): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(90): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(91): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(92): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(93): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(94): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(95): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(96): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(97): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(98): error:  #20: identifier "u32_t" is undefined
+.\include\lpc2148.h(99): error:  #20: identifier "u32_t" is undefined
+Target not created
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling list.c...
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(67): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(68): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(69): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(70): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(71): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(72): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(73): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(74): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(75): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(76): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(77): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(78): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(79): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(80): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(81): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(82): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(88): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(89): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(90): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(91): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(92): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(93): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(94): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(95): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(96): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(97): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(98): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(99): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(100): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(101): error:  #20: identifier "u32_t" is undefined
+compiling queue.c...
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(67): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(68): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(69): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(70): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(71): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(72): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(73): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(74): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(75): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(76): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(77): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(78): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(79): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(80): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(81): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(82): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(88): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(89): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(90): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(91): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(92): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(93): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(94): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(95): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(96): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(97): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(98): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(99): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(100): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(101): error:  #20: identifier "u32_t" is undefined
+compiling tasks.c...
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(67): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(68): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(69): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(70): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(71): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(72): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(73): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(74): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(75): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(76): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(77): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(78): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(79): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(80): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(81): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(82): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(88): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(89): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(90): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(91): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(92): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(93): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(94): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(95): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(96): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(97): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(98): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(99): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(100): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(101): error:  #20: identifier "u32_t" is undefined
+compiling heap_2.c...
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(67): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(68): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(69): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(70): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(71): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(72): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(73): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(74): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(75): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(76): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(77): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(78): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(79): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(80): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(81): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(82): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(88): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(89): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(90): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(91): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(92): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(93): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(94): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(95): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(96): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(97): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(98): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(99): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(100): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(101): error:  #20: identifier "u32_t" is undefined
+compiling port.c...
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(67): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(68): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(69): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(70): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(71): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(72): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(73): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(74): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(75): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(76): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(77): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(78): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(79): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(80): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(81): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(82): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(88): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(89): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(90): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(91): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(92): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(93): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(94): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(95): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(96): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(97): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(98): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(99): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(100): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(101): error:  #20: identifier "u32_t" is undefined
+assembling portASM.s...
+compiling main.c...
+compiling pll0.c...
+compiling uart0.c...
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(67): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(68): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(69): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(70): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(71): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(72): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(73): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(74): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(75): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(76): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(77): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(78): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(79): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(80): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(81): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(82): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(88): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(89): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(90): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(91): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(92): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(93): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(94): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(95): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(96): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(97): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(98): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(99): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(100): error:  #20: identifier "u32_t" is undefined
+E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h(101): error:  #20: identifier "u32_t" is undefined
+Target not created
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling list.c...
+compiling queue.c...
+E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\queue.c(472): warning:  #177-D: function "prvInitialiseMutex" was declared but never referenced
+compiling tasks.c...
+compiling heap_2.c...
+compiling port.c...
+assembling portASM.s...
+compiling main.c...
+compiling pll0.c...
+compiling uart0.c...
+linking...
+Program Size: Code=10220 RO-data=32 RW-data=88 ZI-data=18232  
+"task_creation.axf" - 0 Error(s), 1 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c(53): warning:  #111-D: statement is unreachable
+main.c - 0 Error(s), 1 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling list.c...
+compiling queue.c...
+E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\queue.c(472): warning:  #177-D: function "prvInitialiseMutex" was declared but never referenced
+compiling tasks.c...
+compiling heap_2.c...
+compiling port.c...
+assembling portASM.s...
+compiling main.c...
+compiling pll0.c...
+compiling uart0.c...
+linking...
+Program Size: Code=10500 RO-data=32 RW-data=88 ZI-data=18232  
+"task_creation.axf" - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling list.c...
+compiling queue.c...
+E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\queue.c(472): warning:  #177-D: function "prvInitialiseMutex" was declared but never referenced
+compiling tasks.c...
+compiling heap_2.c...
+compiling port.c...
+assembling portASM.s...
+compiling main.c...
+compiling pll0.c...
+compiling uart0.c...
+linking...
+Program Size: Code=10500 RO-data=32 RW-data=88 ZI-data=18232  
+"task_creation.axf" - 0 Error(s), 1 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling list.c...
+compiling queue.c...
+E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\queue.c(472): warning:  #177-D: function "prvInitialiseMutex" was declared but never referenced
+compiling tasks.c...
+compiling heap_2.c...
+compiling port.c...
+assembling portASM.s...
+compiling main.c...
+compiling pll0.c...
+compiling uart0.c...
+linking...
+Program Size: Code=10484 RO-data=32 RW-data=88 ZI-data=18232  
+"task_creation.axf" - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling list.c...
+compiling queue.c...
+E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\queue.c(472): warning:  #177-D: function "prvInitialiseMutex" was declared but never referenced
+compiling tasks.c...
+compiling heap_2.c...
+compiling port.c...
+assembling portASM.s...
+compiling main.c...
+compiling pll0.c...
+compiling uart0.c...
+linking...
+Program Size: Code=10484 RO-data=32 RW-data=88 ZI-data=18232  
+"task_creation.axf" - 0 Error(s), 1 Warning(s).
+compiling uart0.c...
+include\uart0.c(88): warning:  #223-D: function "Power_On_UART0" declared implicitly
+include\uart0.c - 0 Error(s), 1 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c(44): warning:  #177-D: variable "rData" was declared but never referenced
+main.c - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling uart0.c...
+linking...
+Program Size: Code=10468 RO-data=32 RW-data=88 ZI-data=18232  
+"task_creation.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling list.c...
+compiling queue.c...
+E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\queue.c(472): warning:  #177-D: function "prvInitialiseMutex" was declared but never referenced
+compiling tasks.c...
+compiling heap_2.c...
+compiling port.c...
+assembling portASM.s...
+compiling main.c...
+main.c(44): warning:  #177-D: variable "rData" was declared but never referenced
+compiling pll0.c...
+compiling uart0.c...
+linking...
+Program Size: Code=10468 RO-data=32 RW-data=88 ZI-data=18232  
+"task_creation.axf" - 0 Error(s), 2 Warning(s).
+compiling main.c...
+main.c(46): error:  #167: argument of type "char *" is incompatible with parameter of type "unsigned char"
+main.c(44): warning:  #177-D: variable "rData" was declared but never referenced
+main.c(62): error:  #167: argument of type "char *" is incompatible with parameter of type "unsigned char"
+main.c - 2 Error(s), 1 Warning(s).
+compiling main.c...
+main.c(44): warning:  #177-D: variable "rData" was declared but never referenced
+main.c - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling list.c...
+compiling queue.c...
+E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\queue.c(472): warning:  #177-D: function "prvInitialiseMutex" was declared but never referenced
+compiling tasks.c...
+compiling heap_2.c...
+compiling port.c...
+assembling portASM.s...
+compiling main.c...
+main.c(44): warning:  #177-D: variable "rData" was declared but never referenced
+compiling pll0.c...
+compiling uart0.c...
+linking...
+Program Size: Code=10512 RO-data=32 RW-data=88 ZI-data=18232  
+"task_creation.axf" - 0 Error(s), 2 Warning(s).
+compiling main.c...
+main.c(44): warning:  #177-D: variable "rData" was declared but never referenced
+main.c - 0 Error(s), 1 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling list.c...
+compiling queue.c...
+E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\queue.c(472): warning:  #177-D: function "prvInitialiseMutex" was declared but never referenced
+compiling tasks.c...
+compiling heap_2.c...
+compiling port.c...
+assembling portASM.s...
+compiling main.c...
+main.c(44): warning:  #177-D: variable "rData" was declared but never referenced
+compiling pll0.c...
+compiling uart0.c...
+linking...
+Program Size: Code=10512 RO-data=32 RW-data=88 ZI-data=18232  
+"task_creation.axf" - 0 Error(s), 2 Warning(s).

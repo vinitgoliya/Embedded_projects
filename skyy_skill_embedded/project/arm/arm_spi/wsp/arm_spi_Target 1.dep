@@ -1,6 +1,6 @@
 Dependencies for Project 'arm_spi', Target 'Target 1': (DO NOT MODIFY !)
 F (.\Startup.s)(0x4F5858F0)(--cpu ARM7TDMI -g --apcs=interwork -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips --list "Startup.lst" --xref -o "..\bin\Startup.o" --depend "..\bin\Startup.d")
-F (..\app\main.c)(0x681AD2AE)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\main.o" --omf_browse "..\bin\main.crf" --depend "..\bin\main.d")
+F (..\app\main.c)(0x68331A35)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\main.o" --omf_browse "..\bin\main.crf" --depend "..\bin\main.d")
 I (..\include\lpc2148.h)(0x6805B3F3)
 I (..\include\global.h)(0x6805B3F3)
 I (..\include\pconp.h)(0x6805B3F3)
@@ -25,7 +25,7 @@ F (..\src\pll0.c)(0x6805B3F4)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\inc
 I (..\include\global.h)(0x6805B3F3)
 I (..\include\lpc2148.h)(0x6805B3F3)
 I (..\include\pll0.h)(0x6805B3F3)
-F (..\src\spi.c)(0x681AD2FD)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\spi.o" --omf_browse "..\bin\spi.crf" --depend "..\bin\spi.d")
+F (..\src\spi.c)(0x681D7C2C)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\spi.o" --omf_browse "..\bin\spi.crf" --depend "..\bin\spi.d")
 I (..\include\spi.h)(0x681AD2FD)
 I (..\include\pcb.h)(0x6805B3F3)
 I (..\include\pconp.h)(0x6805B3F3)

@@ -20,7 +20,8 @@ static void Set_BaudRate_9600(void)
 	//U0DLM = 0x01;
 	//U0FDR = 0x52; // DIVADDVALUE = 2, MULVALUE = 5
 	//U0LCR=0X83;                                     //8-data bits, 1 Stop bit, Disable Parity and Enable DLAB
-	U0LCR |= (1<<BIT7);              // Enable access to Divisor Latches
+	//U0LCR |= (1<<BIT7);              // Enable access to Divisor Latches
+	U0LCR=0X83;   
 	//U0LCR |= ((1<<BIT0)|(1<<BIT1));  // setting 8-bit character length
 	/*
 	U0LCR Register
@@ -37,6 +38,7 @@ static void Set_BaudRate_9600(void)
 	U0DLM=1;
   U0DLL=135;
   U0LCR=0X03; 
+ 
 }
 
 

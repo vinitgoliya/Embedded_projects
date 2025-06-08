@@ -7,3 +7,110 @@ E:\Development\Embedded\repositories\Embedded_projects\skyy_skill_embedded\proje
 Project File Date:  05/07/2025
 
 <h2>Output:</h2>
+compiling main.c...
+..\app\main.c - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling delay.c...
+compiling lcd.c...
+compiling pll0.c...
+compiling spi.c...
+linking...
+Program Size: Code=2608 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"..\bin\arm_spi.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=2608 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"..\bin\arm_spi.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\app\main.c(45): error:  #31: expression must have integral type
+..\app\main.c(52): error:  #20: identifier "DDRB" is undefined
+..\app\main.c(52): error:  #20: identifier "MISO" is undefined
+..\app\main.c(53): error:  #20: identifier "MOSI" is undefined
+..\app\main.c(53): error:  #20: identifier "SCK" is undefined
+..\app\main.c(53): error:  #20: identifier "SS" is undefined
+..\app\main.c(54): error:  #20: identifier "SPCR" is undefined
+..\app\main.c(54): error:  #20: identifier "SPE" is undefined
+..\app\main.c(59): warning:  #550-D: variable "flush" was set but never used
+..\app\main.c(79): error:  #20: identifier "SPDR" is undefined
+..\app\main.c(80): error:  #20: identifier "SPSR" is undefined
+..\app\main.c(80): error:  #20: identifier "SPIF" is undefined
+..\app\main.c(78): warning:  #550-D: variable "flush" was set but never used
+..\app\main.c(86): error:  #20: identifier "SPSR" is undefined
+..\app\main.c(86): error:  #20: identifier "SPIF" is undefined
+..\app\main.c(87): error:  #20: identifier "SPDR" is undefined
+..\app\main.c(90): warning:  #951-D: return type of function "main" must be "int"
+..\app\main.c(92): warning:  #223-D: function "Power_Off_Peripherals" declared implicitly
+..\app\main.c(93): warning:  #223-D: function "Init_PLL0" declared implicitly
+..\app\main.c(95): warning:  #1-D: last line of file ends without a newline
+..\app\main.c - 14 Error(s), 6 Warning(s).
+compiling main.c...
+..\app\main.c(45): error:  #31: expression must have integral type
+..\app\main.c(54): warning:  #550-D: variable "flush" was set but never used
+..\app\main.c(73): warning:  #951-D: return type of function "main" must be "int"
+..\app\main.c(75): warning:  #223-D: function "Power_Off_Peripherals" declared implicitly
+..\app\main.c(76): warning:  #223-D: function "Init_PLL0" declared implicitly
+..\app\main.c(78): warning:  #1-D: last line of file ends without a newline
+..\app\main.c - 1 Error(s), 5 Warning(s).
+compiling main.c...
+..\app\main.c(45): error:  #31: expression must have integral type
+..\app\main.c(54): warning:  #550-D: variable "flush" was set but never used
+..\app\main.c(73): warning:  #951-D: return type of function "main" must be "int"
+..\app\main.c(75): warning:  #223-D: function "Power_Off_Peripherals" declared implicitly
+..\app\main.c(76): warning:  #223-D: function "Init_PLL0" declared implicitly
+..\app\main.c(78): warning:  #1-D: last line of file ends without a newline
+..\app\main.c - 1 Error(s), 5 Warning(s).
+compiling main.c...
+..\app\main.c(45): error:  #31: expression must have integral type
+..\app\main.c(54): warning:  #550-D: variable "flush" was set but never used
+..\app\main.c(73): warning:  #951-D: return type of function "main" must be "int"
+..\app\main.c(75): warning:  #223-D: function "Power_Off_Peripherals" declared implicitly
+..\app\main.c(76): warning:  #223-D: function "Init_PLL0" declared implicitly
+..\app\main.c(78): warning:  #1-D: last line of file ends without a newline
+..\app\main.c - 1 Error(s), 5 Warning(s).
+compiling main.c...
+..\app\main.c(69): warning:  #951-D: return type of function "main" must be "int"
+..\app\main.c(71): warning:  #223-D: function "Power_Off_Peripherals" declared implicitly
+..\app\main.c(72): warning:  #223-D: function "Init_PLL0" declared implicitly
+..\app\main.c(75): warning:  #1-D: last line of file ends without a newline
+..\app\main.c - 0 Error(s), 4 Warning(s).
+compiling main.c...
+..\app\main.c(71): warning:  #223-D: function "Power_Off_Peripherals" declared implicitly
+..\app\main.c(72): warning:  #223-D: function "Init_PLL0" declared implicitly
+..\app\main.c(75): warning:  #1-D: last line of file ends without a newline
+..\app\main.c - 0 Error(s), 3 Warning(s).
+compiling main.c...
+..\app\main.c(72): warning:  #223-D: function "Power_Off_Peripherals" declared implicitly
+..\app\main.c(73): warning:  #223-D: function "Init_PLL0" declared implicitly
+..\app\main.c(76): warning:  #1-D: last line of file ends without a newline
+..\app\main.c - 0 Error(s), 3 Warning(s).
+compiling main.c...
+..\app\main.c(80): warning:  #1-D: last line of file ends without a newline
+..\app\main.c - 0 Error(s), 1 Warning(s).
+compiling main.c...
+..\app\main.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\app\main.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\app\main.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+..\app\main.c - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+compiling delay.c...
+compiling lcd.c...
+compiling pll0.c...
+compiling spi.c...
+linking...
+Program Size: Code=2748 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"..\bin\arm_spi.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=2748 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+"..\bin\arm_spi.axf" - 0 Error(s), 0 Warning(s).

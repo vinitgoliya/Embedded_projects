@@ -15,7 +15,7 @@
 ### ADS-LD Output File: '..\bin\arm_uart.axf'
 ### ADS-LD Command File: '..\bin\arm_uart.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '..\bin\arm_uart.lnp', Handle=0x00000624
+### Creating CmdFile '..\bin\arm_uart.lnp', Handle=0x000006DC
 ### Writing '.lnp' file
 ### ADS-LD Command file '..\bin\arm_uart.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.
