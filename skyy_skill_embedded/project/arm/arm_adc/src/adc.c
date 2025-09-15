@@ -17,19 +17,21 @@
 #define Wait_ADC0()    while(!(AD0DR1 & (1<<BIT31)))
 */
 
-void init_ADC0(void)
+void Init_ADC0(void)
 {
 	DE_Select_ADC0_Input(); // Deselect all ADC inputs
 	
   Config_ADC_Pin();           // Configure ADC pin
-	
-	Disable_ADC0_Powerdownmode(); // operational ADC0
 	
   Power_On_ADC0();        // Power on ADC
 
   Set_ADC0_Clock();       // Set ADC clock
 	
   Select_AD01();          // Select ADC channel 1
+	
+	Set_Bit(AD0CR,BIT0);    // Select ADC channel 0
+	
+	Disable_ADC0_Powerdownmode(); // operational ADC0
 }
 
 
@@ -76,7 +78,8 @@ unsigned int Get_AD01_Count() {
     unsigned int adc_result = 0;
     Start_ADC0();      // Start conversion
     Wait_ADC0();       // Wait for conversion to finish
-    adc_result = (AD0DR1 >> 6) & 0x3FF;  // Extract 10-bit result
+    //adc_result = (AD0DR0 >> 6) & 0x3FF;  // Extract 10-bit result
+	  adc_result = (AD0DR0 >>6)&0x000003FF;
     Stop_ADC0();       // Stop ADC
     return adc_result;
 }

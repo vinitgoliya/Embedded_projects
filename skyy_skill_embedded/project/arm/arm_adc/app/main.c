@@ -13,9 +13,9 @@ int main()
   int voltage_measured=0;
 	Init_PLL0();
 
-	Init_Lcd();
+	Init_ADC0();
 	
-	init_ADC0();
+	Init_Lcd();
 	
 	while(1)
 	{
@@ -24,9 +24,10 @@ int main()
   voltage_measured = adc_Count * 3;  // Convert to voltage (1 count = 3mV)
  
 	Set_Lcd_Command(0x80);
-  //Set_Lcd_num(voltage_measured);
+  Set_Lcd_Long(voltage_measured);
+	//Set_Lcd_Long(99434399);
 	// Set_Lcd_String(str_adc_value);
-	Set_Lcd_String("Hello World");
+	//Set_Lcd_String("Hello World");
 		
 	delay(500);
 	}

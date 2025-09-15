@@ -1,33 +1,33 @@
 Dependencies for Project 'arm_adc', Target 'Target 1': (DO NOT MODIFY !)
 F (.\Startup.s)(0x6803FB7A)(--cpu ARM7TDMI -g --apcs=interwork -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips --list "Startup.lst" --xref -o "..\bin\Startup.o" --depend "..\bin\Startup.d")
-F (..\app\main.c)(0x6804F65A)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\main.o" --omf_browse "..\bin\main.crf" --depend "..\bin\main.d")
+F (..\app\main.c)(0x684EC34C)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\main.o" --omf_browse "..\bin\main.crf" --depend "..\bin\main.d")
 I (..\include\global.h)(0x6803FB7A)
 I (..\include\pcb.h)(0x6803FB7A)
 I (..\include\lpc2148.h)(0x6803FB7A)
 I (..\include\pll0.h)(0x6803FB7A)
-I (..\include\lcd.h)(0x6803FB7A)
+I (..\include\lcd.h)(0x684D917D)
 I (..\include\delay.h)(0x6803FB7A)
 I (..\include\pconp.h)(0x6803FB7A)
-I (..\include\adc.h)(0x6804F4B8)
+I (..\include\adc.h)(0x684EC32C)
 F (..\src\delay.c)(0x6803FB7A)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\delay.o" --omf_browse "..\bin\delay.crf" --depend "..\bin\delay.d")
 I (..\include\global.h)(0x6803FB7A)
 I (..\include\delay.h)(0x6803FB7A)
-F (..\src\lcd.c)(0x6803FB7A)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\lcd.o" --omf_browse "..\bin\lcd.crf" --depend "..\bin\lcd.d")
+F (..\src\lcd.c)(0x684D910F)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\lcd.o" --omf_browse "..\bin\lcd.crf" --depend "..\bin\lcd.d")
 I (..\include\global.h)(0x6803FB7A)
 I (..\include\pcb.h)(0x6803FB7A)
 I (..\include\lpc2148.h)(0x6803FB7A)
-I (..\include\lcd.h)(0x6803FB7A)
+I (..\include\lcd.h)(0x684D917D)
 I (..\include\delay.h)(0x6803FB7A)
-F (..\src\pll0.c)(0x6803FB7A)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\pll0.o" --omf_browse "..\bin\pll0.crf" --depend "..\bin\pll0.d")
+F (..\src\pll0.c)(0x684D8D31)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\pll0.o" --omf_browse "..\bin\pll0.crf" --depend "..\bin\pll0.d")
 I (..\include\global.h)(0x6803FB7A)
 I (..\include\lpc2148.h)(0x6803FB7A)
 I (..\include\pll0.h)(0x6803FB7A)
-F (..\src\adc.c)(0x6804F4B8)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\adc.o" --omf_browse "..\bin\adc.crf" --depend "..\bin\adc.d")
+F (..\src\adc.c)(0x684ECD10)(-c --cpu ARM7TDMI -g -O0 --apcs=interwork -I..\include -I E:\installed\Keil_v5\ARM\RV31\INC -I E:\installed\Keil_v5\ARM\CMSIS\Include -I E:\installed\Keil_v5\ARM\Inc\Philips -o "..\bin\adc.o" --omf_browse "..\bin\adc.crf" --depend "..\bin\adc.d")
 I (..\include\global.h)(0x6803FB7A)
 I (..\include\pcb.h)(0x6803FB7A)
 I (..\include\lpc2148.h)(0x6803FB7A)
 I (..\include\pll0.h)(0x6803FB7A)
-I (..\include\lcd.h)(0x6803FB7A)
+I (..\include\lcd.h)(0x684D917D)
 I (..\include\delay.h)(0x6803FB7A)
-I (..\include\adc.h)(0x6804F4B8)
+I (..\include\adc.h)(0x684EC32C)
 I (..\include\pconp.h)(0x6803FB7A)

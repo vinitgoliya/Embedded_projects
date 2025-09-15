@@ -427,9 +427,19 @@
               <FilePath>E:\installed\Keil_v5\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portASM.s</FilePath>
             </File>
             <File>
-              <FileName>main.c</FileName>
+              <FileName>pll0.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\main.c</FilePath>
+              <FilePath>.\include\pll0.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart0.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\include\uart0.c</FilePath>
+            </File>
+            <File>
+              <FileName>mutex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\mutex.c</FilePath>
             </File>
           </Files>
         </Group>

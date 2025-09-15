@@ -124,6 +124,7 @@ void Set_Lcd_String(u8_t *str)
 	}
 }
 
+/*
 void Set_Lcd_num(u32_t num)
 {
 	u8_t n1=0,n2=0,n3=0;
@@ -142,6 +143,45 @@ void Set_Lcd_num(u32_t num)
 	Set_Lcd_Char(n2);
 	Set_Lcd_Char(n3);
 }
+*/
+
+void Set_Lcd_num(u32_t num)
+{
+	u8_t n1=0,n2=0,n3=0;
+
+	n1 = num / 100;
+	n2 = (num / 10) % 10;
+	n3 = num % 10;
+
+	Set_Lcd_Char(n1 + '0');
+	Set_Lcd_Char(n2 + '0');
+	Set_Lcd_Char(n3 + '0');
+}
+
+
+
+void Set_Lcd_Long(u32_t num)
+{
+    u8_t buf[10];
+    s8_t i = 0;
+
+    if (num == 0) {
+        Set_Lcd_Char('0');
+        return;
+    }
+
+    // Extract digits in reverse
+    while (num > 0) {
+        buf[i++] = (num % 10) + '0';
+        num /= 10;
+    }
+
+    // Print digits in correct order
+    while (i--) {
+        Set_Lcd_Char(buf[i]);
+    }
+}
+
 
 void Init_Lcd(void)
 {
