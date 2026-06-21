@@ -1,0 +1,17 @@
+timers.o: ..\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\timers.c
+timers.o: E:\installed\Keil_v5\ARM\ARMCC\bin\..\include\stdlib.h
+timers.o: ..\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\FreeRTOS.h
+timers.o: E:\installed\Keil_v5\ARM\ARMCC\bin\..\include\stddef.h
+timers.o: E:\installed\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+timers.o: ..\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\FreeRTOSConfig.h
+timers.o: E:\installed\Keil_v5\ARM\Inc\Philips\lpc214x.h
+timers.o: .\include\global.h
+timers.o: ..\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\projdefs.h
+timers.o: ..\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\portable.h
+timers.o: ..\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\deprecated_definitions.h
+timers.o: ..\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\..\..\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h
+timers.o: ..\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\mpu_wrappers.h
+timers.o: ..\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\task.h
+timers.o: ..\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\list.h
+timers.o: ..\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\queue.h
+timers.o: ..\FreeRTOS_V9.0.0rc2\FreeRTOS\Source\include\timers.h

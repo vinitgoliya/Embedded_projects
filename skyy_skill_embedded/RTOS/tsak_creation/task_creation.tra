@@ -20,7 +20,7 @@
 ### ADS-LD Output File: 'task_creation.axf'
 ### ADS-LD Command File: 'task_creation.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'task_creation.lnp', Handle=0x00000A10
+### Creating CmdFile 'task_creation.lnp', Handle=0x000006C4
 ### Writing '.lnp' file
 ### ADS-LD Command file 'task_creation.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

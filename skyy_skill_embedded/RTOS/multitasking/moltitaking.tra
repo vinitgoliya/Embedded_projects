@@ -1,0 +1,32 @@
+*** Creating Trace Output File 'moltitaking.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"main.o"'
+### List of Objects: adding '"pll0.o"'
+### List of Objects: adding '"uart0.o"'
+### List of Objects: adding '"port.o"'
+### List of Objects: adding '"croutine.o"'
+### List of Objects: adding '"event_groups.o"'
+### List of Objects: adding '"list.o"'
+### List of Objects: adding '"queue.o"'
+### List of Objects: adding '"tasks.o"'
+### List of Objects: adding '"timers.o"'
+### List of Objects: adding '"heap_2.o"'
+### List of Objects: adding '"portasm.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "startup.o" "main.o" "pll0.o" "uart0.o" "port.o" "croutine.o" "event_groups.o" "list.o" "queue.o" "tasks.o" "timers.o" "heap_2.o" "portasm.o" 
+--strict --scatter "moltitaking.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\moltitaking.map" -o moltitaking.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'moltitaking.axf'
+### ADS-LD Command File: 'moltitaking.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'moltitaking.lnp', Handle=0x00000AFC
+### Writing '.lnp' file
+### ADS-LD Command file 'moltitaking.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
